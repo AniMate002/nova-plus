@@ -8,14 +8,14 @@ const MainPage:React.FC = () => {
         <div className="min-h-[100vh] overflow-hidden">
             <Border />
             <Header />
-            <div className="min-h-[1000px] first--trigger  bg-black">
+            <div className="h-[100vh] first--trigger  bg-black">
                 <BreakThroughLimits />
             </div>
-            <div className="second--block min-h-[1000px] bg-red-400">
-
+            <div className="second--block min-h-[1000px] bg-red-400 text-white">
+                frhgrj
             </div>
-            <div className="min-h-[1000px] bg-blue-400">
-
+            <div className="min-h-[1000px] bg-blue-400 text-white">
+nhgfd
             </div>
         </div>
     );

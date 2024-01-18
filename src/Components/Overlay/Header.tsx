@@ -8,9 +8,8 @@ const Header:React.FC = () => {
             <div className="flex gap-4">
                 <Link to={'/games'}>Games</Link>
                 <Link to={'/mediaCenter'}>Media Center</Link>
-                <Link to={'/career'}>Carrer</Link>
+                <Link to={'/career'}>Career</Link>
                 <Link to={'/aboutUs'}>About Us</Link>
-
             </div>
         </header>
     );
