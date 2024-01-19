@@ -10,6 +10,11 @@
     font-family: "GT Haptik Regular";
 }
 
+.Montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 /*
 
 font-family: "GT Haptik Regular";
@@ -51,8 +56,62 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-.first--trigger{
+.mainImage{
     background-image: url(images/mainBg2.jpg);
     background-position: center;
-    background-repeat: no-repeat;
+}
+
+
+.main--card{
+    box-shadow: 0 0 40px #6733c8;
+}
+
+.divider{
+    background: white;
+    height: 2px;
+    width: 30%;
+    margin: 20px auto;
+    border-radius: 2px;
+    display: block;
+}
+
+
+.expand--button:hover{
+    text-shadow: 0 0 10px white;
+}
+
+
+.content--card--container p{
+    box-shadow: 0 0 20px #6733c8;
+}
+
+
+
+@keyframes progress {
+    from {
+      stroke-dasharray: 0 1400;
+    }
+    to {
+      stroke-dasharray: 1257 1400;
+    }
+  }
+
+  .progress--rotate {
+    transform-origin: center;
+    animation: progress 2s linear infinite;
+    animation-direction: alternate;
+  }
+
+
+.screenshot--container{
+    display: block;
+    overflow: hidden;
+    width: 100px;
+    height: 150px;
+    margin-top: 2%;
+
+}
+
+.screenshot--itself{
+    min-width:  300px;
 }

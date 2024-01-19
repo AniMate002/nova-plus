@@ -18,23 +18,16 @@ const Border:React.FC = () => {
                 // },
             }
         })
-        timeLine.from('.main--border', {
-            outlineOffset: -40,
-            outline: '25px solid #5b21b6',
-            duration: 2000,
-        })
+        timeLine
         .to('.main--border', {
             outlineOffset: -30,
             outline: '30px solid #5b21b6',
-            duration: 2000,
-
-        }).from('.main--header', {
-            top: '48px',
-            duration: 2000
-        })
-        .to('.main--header', {
+        }).to('.main--header', {
             top: '8px',
-            duration: 2000
+        }).to('.go--up--button', {
+            opacity: 1
+        }).to('.social--neworks', {
+            left: '7px'
         })
     }, [])
     return (
