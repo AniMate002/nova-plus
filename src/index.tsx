@@ -7,6 +7,8 @@ import {
 } from "react-router-dom";
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import { useEffect } from 'react';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 
 const root = ReactDOM.createRoot(
@@ -21,8 +23,10 @@ const router = createBrowserRouter([
 ]);
 
 root.render(
+  <Provider store={store}>
     <ReactLenis root>
       <RouterProvider router={router} />
     </ReactLenis>
+  </Provider>
 );
 

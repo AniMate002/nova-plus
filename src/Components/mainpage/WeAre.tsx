@@ -10,8 +10,6 @@ import bgImage8 from '../../images/screenshots/scr8.jpg'
 import Cards from "./Cards";
 
 
-
-
 const WeAre:React.FC = () => {
     const [scr, setScr] = useState(bgImage1)
     const [width, setWidth] = useState(100)
@@ -75,7 +73,7 @@ const WeAre:React.FC = () => {
             <div>
                 <h2 className="text-violet-800 Montserrat font-bold text-center mt-10 uppercase text-[50px] ">nova plus</h2>
                 <div className="block bg-stone-800 mx-auto w-[30%] h-[2px]"></div>
-                <div className="mt-10 w-[60%] block mx-auto text-center text-stone-500">    
+                <div className="mt-10 w-[60%] block mx-auto text-center text-slate-400">    
                     NovaPlus stands as the epitome of cool and innovation in the game development industry, setting itself apart through
                     a combination of groundbreaking creativity, cutting-edge technology,
                     and an unwavering commitment to delivering unparalleled gaming experiences.
