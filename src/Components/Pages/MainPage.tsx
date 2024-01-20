@@ -5,6 +5,7 @@ import BreakThroughLimits from "../mainpage/BreakThroughLimits";
 import ModalSingleCard from "../mainpage/ModalSingleCard/ModalSingleCard";
 import WeAre from "../mainpage/WeAre";
 import { gsap } from "gsap";
+import WordAboutUs from "../mainpage/WordAboutUs/WordAboutUs";
 
 
 const MainPage:React.FC = () => {
@@ -19,8 +20,8 @@ const MainPage:React.FC = () => {
             <div className="second--block min-h-[100vh] bg-black">
                 <WeAre/>
             </div>
-            <div className="min-h-[1000px] bg-blue-400 text-white">
-                nhgfd
+            <div className="min-h-[100vh] bg-black text-white">
+                <WordAboutUs />
             </div>
         </div>
     );

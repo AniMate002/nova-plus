@@ -68,10 +68,12 @@ const WeAre:React.FC = () => {
                 <div  className={`screenshot--container`} >
                     <img src={scr} alt="game image" className={`screenshot--itself`}/>
                 </div> 
-            studio</div>
+            studio
+            </div>
 
             <div>
-                <h2 className="text-violet-800 Montserrat font-bold text-center mt-10 uppercase text-[50px] ">nova plus</h2>
+                <h3 className="text-center mt-40 font-bold">we are</h3>
+                <h2 className="text-violet-800 leading-10 Montserrat font-bold text-center mb-10  uppercase text-[50px] ">nova plus</h2>
                 <div className="block bg-stone-800 mx-auto w-[30%] h-[2px]"></div>
                 <div className="mt-10 w-[60%] block mx-auto text-center text-slate-400">    
                     NovaPlus stands as the epitome of cool and innovation in the game development industry, setting itself apart through

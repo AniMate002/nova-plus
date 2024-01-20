@@ -6,9 +6,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
-import { useEffect } from 'react';
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/autoplay'
 
 
 const root = ReactDOM.createRoot(
