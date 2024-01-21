@@ -172,3 +172,8 @@ font-family: 'Montserrat', sans-serif;
 .violet--quote{
     box-shadow: 10px 10px 0 #8b5cf6;
 }
+
+
+.fading--spot{
+    box-shadow: 0 0 10px white;
+}

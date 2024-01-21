@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import modalCardReducer from './modalCardReducer'
+import worldMapReducer from './worldMapReducer'
 
 export const store = configureStore({
   reducer: {
-    modalCard: modalCardReducer
+    modalCard: modalCardReducer,
+    worldMap: worldMapReducer
   },
 })
 
