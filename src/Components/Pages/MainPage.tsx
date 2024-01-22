@@ -7,6 +7,7 @@ import WeAre from "../mainpage/WeAre";
 import { gsap } from "gsap";
 import WordAboutUs from "../mainpage/WordAboutUs/WordAboutUs";
 import WorldMap from "../mainpage/WorldMap/WorldMap";
+import JoinUs from "../mainpage/JoinUs/JoinUs";
 
 
 const MainPage:React.FC = () => {
@@ -26,6 +27,9 @@ const MainPage:React.FC = () => {
             </div>
             <div className="min-h-[100vh] bg-slate-950 text-white">
                 <WorldMap />
+            </div>
+            <div className="min-h-[100vh] bg-slate-950 text-white">
+                <JoinUs />
             </div>
         </div>
     );

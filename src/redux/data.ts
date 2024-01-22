@@ -9,6 +9,7 @@ import ParisImage from '../images/cities/Paris.jpg'
 import BerlinImage from '../images/cities/Berlin.jpg'
 import WashingtonImage from '../images/cities/Washington.jpg'
 import LasVegasImage from '../images/cities/LasVegas.jpg'
+import { jobI } from "./jobsReducer";
 
 
 
@@ -98,3 +99,69 @@ const LasVegas: cityI = {
 }
 
 export const allCities: citiesType = [Minks, Warsaw, Paris, Berlin, Washington, LasVegas]
+
+
+
+
+
+const job1: jobI = {
+    position: 'Senior HR Business Partner',
+    location: 'Warszawa / Poland',
+    type: 'Full-time'
+};
+
+const job2: jobI = {
+    position: 'Software Engineer',
+    location: 'San Francisco, CA, USA',
+    type: 'Permanent'
+};
+
+const job3: jobI = {
+    position: 'Marketing Specialist',
+    location: 'London, UK',
+    type: 'Contract'
+};
+
+const job4: jobI = {
+    position: 'Data Scientist',
+    location: 'Berlin, Germany',
+    type: 'Part-time'
+};
+
+const job5: jobI = {
+    position: 'Product Manager',
+    location: 'New York, NY, USA',
+    type: 'Remote'
+};
+
+const job6: jobI = {
+    position: 'Financial Analyst',
+    location: 'Tokyo, Japan',
+    type: 'Full-time'
+};
+
+const job7: jobI = {
+    position: 'Customer Support Representative',
+    location: 'Sydney, Australia',
+    type: 'Permanent'
+};
+
+const job8: jobI = {
+    position: 'UX/UI Designer',
+    location: 'Toronto, Canada',
+    type: 'Contract'
+};
+
+const job9: jobI = {
+    position: 'Sales Executive',
+    location: 'Mumbai, India',
+    type: 'Full-time'
+};
+
+const job10: jobI = {
+    position: 'IT Support Specialist',
+    location: 'Cape Town, South Africa',
+    type: 'Remote'
+};
+
+export const allJobs = [job1, job2, job3, job4, job5, job6, job7, job8, job9, job10]

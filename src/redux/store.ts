@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import modalCardReducer from './modalCardReducer'
 import worldMapReducer from './worldMapReducer'
+import jobsReducer from './jobsReducer'
 
 export const store = configureStore({
   reducer: {
     modalCard: modalCardReducer,
-    worldMap: worldMapReducer
+    worldMap: worldMapReducer,
+    jobs: jobsReducer
   },
 })
 

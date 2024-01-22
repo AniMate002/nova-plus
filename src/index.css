@@ -177,3 +177,9 @@ font-family: 'Montserrat', sans-serif;
 .fading--spot{
     box-shadow: 0 0 10px white;
 }
+
+
+.grid--container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
