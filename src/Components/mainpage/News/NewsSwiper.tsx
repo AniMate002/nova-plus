@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useAppSelector } from '../../../redux/hook';
-import SingleNewsSlider from './SingleNewsSlider';
 
 
 
@@ -18,6 +17,7 @@ const NewsSwiper:React.FC = () => {
             <p className='w-[70%] pt-10 text-5xl Haptik'>{item.title}</p>
         </div>
     </SwiperSlide>)
+    
     return (
         <Swiper slidesPerView={2.1} freeMode={{sticky: false}}  speed={1500}>
             {rendreredSliders}
