@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useAppSelector } from "../../../redux/hook";
 import SingleJob from "./SingleJob";
 import { Link } from "react-router-dom";
@@ -5,12 +6,20 @@ import { Link } from "react-router-dom";
 
 
 const JoinUs:React.FC = () => {
-
+    const [linkText, setLinkText] = useState<string>()
     const { jobs } = useAppSelector(state => state.jobs)
 
     const renderedJobs = jobs.map(job => {
         return <SingleJob key={job.location + job.position} {...job}/>
     })
+
+    const mouseEnterHandler = ():void => {
+        setLinkText("fa-solid fa-up-right-from-square")
+    }
+
+    const mouseLeaveHandler = ():void => {
+        setLinkText('')
+    }
 
     return (
         <div className="mt-[-400px] flex flex-row justify-between w-[80%] mx-auto relative z-30 gap-10">
@@ -27,7 +36,10 @@ const JoinUs:React.FC = () => {
             <div>
                 <h2 className="text-white text-8xl font-bold text-center uppercase">nova plus</h2>
                 <div className="flex items-center mx-auto justify-center h-[2px] w-[50%] bg-slate-700 my-10"><i className="fa-solid fa-code text-center text-slate-300 text-xl"></i></div>
-                <p className="text-center mb-4">Explore exciting career opportunities at NovaPlus, a leading game development company. Join us in shaping the future of gaming with innovative projects and a collaborative, growth-focused environment.</p>
+                <p className="text-center mb-4 text-slate-500">Explore exciting career opportunities at NovaPlus, a leading game development company. Join us in shaping the future of gaming with innovative projects and a collaborative, growth-focused environment.</p>
+                <Link to={'/'} onMouseEnter={mouseEnterHandler} onMouseLeave={mouseLeaveHandler} className={`${linkText} flex w-[100px] h-[100px] bg-violet-700 mx-auto rounded-full items-center justify-center hover:scale-[1.1] transition-all hover:bg-slate-800 hover:outline hover:outline-violet-800`}>
+                    {linkText ? "" : "See more"}
+                </Link>
             </div>
         </div>
     );

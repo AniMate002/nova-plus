@@ -10,6 +10,19 @@ import BerlinImage from '../images/cities/Berlin.jpg'
 import WashingtonImage from '../images/cities/Washington.jpg'
 import LasVegasImage from '../images/cities/LasVegas.jpg'
 import { jobI } from "./jobsReducer";
+import { allNewsType, newsI } from "./newsReducer";
+
+import news1_1 from '../images/news/news1_1.png'
+import news2_1 from '../images/news/news2_1.jpg'
+import news3_1 from '../images/news/news3_1.jpg'
+import news4_1 from '../images/news/news4_1.jpg'
+import news5_1 from '../images/news/news5_1.jpg'
+import news6_1 from '../images/news/news6_1.jpg'
+import news7_1 from '../images/news/news7_1.jpg'
+import news8_1 from '../images/news/news8_1.jpg'
+import news9_1 from '../images/news/news9_1.jpg'
+import news10_1 from '../images/news/news10_1.png'
+
 
 
 
@@ -165,3 +178,116 @@ const job10: jobI = {
 };
 
 export const allJobs = [job1, job2, job3, job4, job5, job6, job7, job8, job9, job10]
+
+
+
+
+
+
+
+
+
+const news1: newsI = {
+    date: "oct 01",
+    year: 2023,
+    read: 2,
+    images: [news1_1],
+    title: "NovaPlus Unveils Next-Gen Game Engine",
+    subtitle: "Revolutionizing gaming with cutting-edge technology.",
+    body: "NovaPlus is thrilled to introduce its latest and most advanced game engine to date, marking a significant leap forward in the world of interactive entertainment. This groundbreaking engine, meticulously crafted by our team of seasoned developers, is set to redefine the gaming experience by delivering unparalleled graphics, realistic physics, and a level of immersion that transcends the boundaries of imagination.\n\nWith a focus on empowering developers, our new game engine offers a suite of tools that streamline the development process, allowing creators to bring their visions to life with unprecedented ease. Whether you're a veteran game developer or just starting your journey, NovaPlus is committed to providing you with the tools and support you need to push the boundaries of creativity.\n\nAs we celebrate this milestone, we extend our gratitude to the gaming community for their continuous support. NovaPlus remains dedicated to pushing the envelope, and we can't wait to see the incredible experiences that developers around the world will create with our next-gen game engine."
+};
+
+const news2: newsI = {
+    date: "june 10",
+    year: 2024,
+    read: 3,
+    images: [news2_1],
+    title: "NovaPlus Hosts Global Game Developers Conference",
+    subtitle: "Bringing industry leaders together for innovation and collaboration.",
+    body: "NovaPlus, a trailblazer in the game development industry, recently played host to a global conference that brought together visionaries, innovators, and industry leaders from around the world. The event, which spanned three days of intense discussions and knowledge sharing, showcased NovaPlus's commitment to fostering collaboration and driving innovation in the gaming ecosystem.\n\nThe Global Game Developers Conference provided a platform for developers, artists, and industry experts to exchange ideas, showcase their latest projects, and explore the future of gaming. Attendees had the opportunity to participate in workshops led by industry veterans, attend insightful panels on emerging trends, and engage in networking sessions that facilitated valuable connections.\n\nNovaPlus takes pride in supporting the global game development community, and events like these underscore our dedication to pushing the boundaries of what is possible in the ever-evolving landscape of interactive entertainment."
+};
+
+const news3: newsI = {
+    date: "june 14",
+    year: 2024,
+    read: 5,
+    images: [news3_1],
+    title: "NovaPlus Sponsors International eSports Championship",
+    subtitle: "Supporting the rise of competitive gaming on the world stage.",
+    body: "NovaPlus, a steadfast advocate for the gaming community, is excited to announce its sponsorship of the upcoming International eSports Championship. As the popularity of competitive gaming continues to soar, NovaPlus recognizes the importance of supporting events that showcase the skill, dedication, and passion of eSports athletes on the global stage.\n\nThe championship will feature top players and teams from around the world competing in intense battles across various gaming genres. NovaPlus's commitment to fostering the growth of eSports aligns with our belief in the power of gaming to unite people and communities. By sponsoring this prestigious event, NovaPlus aims to contribute to the elevation of competitive gaming, offering players a platform to shine and inspiring the next generation of eSports enthusiasts.\n\nStay tuned for an electrifying championship that promises thrilling moments, fierce competition, and the celebration of eSports excellence."
+};
+
+
+
+const news4: newsI = {
+    date: "febr 09",
+    year: 2024,
+    read: 2,
+    images: [news4_1],
+    title: "NovaPlus Teases Exciting New Game Title",
+    subtitle: "Get ready for an adrenaline-pumping adventure!",
+    body: "NovaPlus is thrilled to offer gamers a sneak peek into the development of our upcoming title, set to redefine the gaming landscape. This highly anticipated game promises an immersive narrative, stunning visuals, and gameplay mechanics that will keep players on the edge of their seats. Stay tuned for the official reveal, as we prepare to unveil a gaming experience like no other."
+};
+
+const news5: newsI = {
+    date: "febr 23",
+    year: 2024,
+    read: 2,
+    images: [news5_1],
+    title: "NovaPlus Community Extravaganza",
+    subtitle: "Celebrating our vibrant gaming community!",
+    body: "Join NovaPlus in a week-long celebration dedicated to our incredible gaming community. From exclusive in-game events and challenges to live-streamed Q&A sessions with our developers, this extravaganza is our way of expressing gratitude to the passionate players who make NovaPlus games truly special. Get ready for surprises, giveaways, and a whole lot of fun – because at NovaPlus, the community is at the heart of everything we do!"
+};
+
+const news6: newsI = {
+    date: "march 17",
+    year: 2024,
+    read: 4,
+    images: [news6_1],
+    title: "NovaPlus Welcomes New Talent to the Team",
+    subtitle: "Expanding our creative force for future success.",
+    body: "NovaPlus is excited to announce the addition of talented individuals to our growing team of game developers, designers, and innovators. These new hires bring a wealth of experience and fresh perspectives, contributing to NovaPlus's commitment to excellence. As we continue to push the boundaries of gaming, we're thrilled to have these exceptional individuals on board, each playing a crucial role in shaping the future of NovaPlus."
+};
+
+const news7: newsI = {
+    date: "march 30",
+    year: 2024,
+    read: 5,
+    images: [news7_1],
+    title: "NovaPlus Receives Industry Recognition",
+    subtitle: "Acknowledging excellence in game development.",
+    body: "NovaPlus proudly accepts industry recognition for its outstanding contributions to game development. This prestigious award acknowledges NovaPlus's commitment to innovation, creativity, and pushing the boundaries of what's possible in the gaming industry. We extend our gratitude to our dedicated team, passionate community, and industry partners for their continuous support in making NovaPlus a leader in the world of interactive entertainment."
+};
+
+const news8: newsI = {
+    date: "apr 03",
+    year: 2024,
+    read: 6,
+    images: [news8_1],
+    title: "NovaPlus Unleashes Major Game Update",
+    subtitle: "Enhancements, features, and surprises await!",
+    body: "Hold on to your controllers! NovaPlus is excited to roll out a major update for one of our flagship games. This update brings a host of new features, gameplay enhancements, and surprises that will delight players and keep them engaged for hours on end. Dive into the immersive world of NovaPlus games and experience the thrill of our latest update – because the adventure is just getting started!"
+};
+
+const news9: newsI = {
+    date: "apr 20",
+    year: 2024,
+    read: 1,
+    images: [news9_1],
+    title: "NovaPlus Listens to Community Feedback",
+    subtitle: "Your voice shapes the future of our games.",
+    body: "At NovaPlus, we believe in the power of community feedback. Our team has been diligently reviewing player suggestions and incorporating valuable insights into our game development process. Your passion drives us to create better, more engaging experiences. Keep the feedback coming – together, we'll continue to shape the future of NovaPlus games!"
+};
+
+const news10: newsI = {
+    date: "may 08",
+    year: 2024,
+    read: 3,
+    images: [news10_1],
+    title: "NovaPlus Rings in the New Year with Festive In-Game Events",
+    subtitle: "Celebrate the season with special in-game festivities.",
+    body: "As we welcome the new year, NovaPlus invites players to join us in festive in-game events and activities. From exclusive holiday-themed items to special challenges with exciting rewards, there's plenty to enjoy. May the new year bring joy, adventure, and countless memorable gaming moments. Happy gaming from the NovaPlus family!"
+};
+
+
+export const allNews: allNewsType = [news1, news2, news3, news4, news5, news6, news7, news8, news9, news10]
