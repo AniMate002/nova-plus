@@ -183,3 +183,8 @@ font-family: 'Montserrat', sans-serif;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
+
+.purple--shadow{
+    box-shadow: 0 0 20px #6733c8;
+}
