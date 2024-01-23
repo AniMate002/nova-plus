@@ -71,7 +71,7 @@ const WeAre:React.FC = () => {
             studio
             </div>
 
-            <div>
+            <div className="we--are--trigger opacity-0">
                 <h3 className="text-center mt-40 font-bold">we are</h3>
                 <h2 className="text-violet-800 leading-10 Montserrat font-bold text-center mb-10  uppercase text-[50px] ">nova plus</h2>
                 <div className="block bg-stone-800 mx-auto w-[30%] h-[2px]"></div>
