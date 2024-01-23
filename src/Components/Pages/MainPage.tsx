@@ -51,9 +51,9 @@ const MainPage:React.FC = () => {
             }
         })
 
-        const gamesChanger = createGameTimeLine('60', '40', 1)
-        const games2Changer = createGameTimeLine('70', '32', 2)
-        const games3Changer = createGameTimeLine('80', '24', 3)
+        const gamesChanger = createGameTimeLine('60', '60', 1)
+        const games2Changer = createGameTimeLine('60', '70', 2)
+        const games3Changer = createGameTimeLine('60', '80', 3)
 
         const worldMapChanger = createWorldMapAnimation('20', '80', 1)
         const worldMap2Changer = createWorldMapAnimation('12', '82', 2)

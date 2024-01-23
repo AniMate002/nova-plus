@@ -85,10 +85,6 @@ export function createNewsAnimation(start: string, newsNumber: number):gsap.core
             scrub: true,
             start: `${start}% center`,
             end: `${start} center`,
-            markers: {
-                startColor: 'white',
-                endColor: 'white'
-            },
             onEnter:() => {
                 gsap.to(`.news--trigger--${newsNumber}`, {
                     opacity: 1
