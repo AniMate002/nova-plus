@@ -25,18 +25,18 @@ const WorldMap:React.FC = () => {
         <div className='pt-52 relative pb-[800px]'>
             <h3 className='uppercase text-white font-bold text-4xl Haptik block w-[80%] mx-auto mb-4'>nova plus</h3>
             <div className="block w-[80%] mx-auto select-none">
-                <div className='text-end'>
+                <div className='world--map--1 text-end scale-0 relative z-30'>
                     <p className='uppercase Haptik text-7xl text-violet-500 font-bold'>Our</p>
                     <p className='uppercase Haptik text-9xl text-white font-bold relative z-20 leading-10'>offices</p>
                 </div>
-                <div className='block mx-auto mt-40 ml-[27%]'>
+                <div className='world--map--2 scale-0 block mx-auto mt-40 ml-[27%]'>
                     <p className='uppercase Haptik text-6xl text-violet-500 font-bold'>around</p>
                     <p className='uppercase Haptik text-6xl text-white font-bold'>the</p>
                 </div>
-                <p className="text-white uppercase font-bold text-8xl text-end mr-48">world</p>
+                <p className="world--map--3 scale-0 text-white uppercase font-bold text-8xl text-end mr-48">world</p>
             </div>
-            <div className='w-[80%] absolute top-0 left-[50%] translate-x-[-50%] z-10'>
-                <img src={worldMap} alt={worldMap} className='w-full h-full' />
+            <div className='world--map--4 scale-0 w-[80%] absolute top-0 left-[50%] translate-x-[-50%] z-10'>
+                <img src={worldMap} alt={worldMap} className='  w-full h-full relative z-20' />
                 { renderedCities }
             </div>
         </div>

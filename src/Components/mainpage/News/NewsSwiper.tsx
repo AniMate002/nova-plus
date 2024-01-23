@@ -6,8 +6,8 @@ import { useAppSelector } from '../../../redux/hook';
 const NewsSwiper:React.FC = () => {
     const { news } = useAppSelector(state => state.news)
 
-    const rendreredSliders = news.map(item => <SwiperSlide key={item.title}>
-        <div className='w-[550px] pb-2'>
+    const rendreredSliders = news.map((item, index) => <SwiperSlide key={item.title}>
+        <div className={`news--trigger--${index} w-[550px] pb-2 opacity-0`}>
             <img src={item.images[0]} alt={item.images[0]}/>
             <div className='flex items-center justify-between px-10 mt-4'>
                 <p className='Haptik'>{item.date}</p>

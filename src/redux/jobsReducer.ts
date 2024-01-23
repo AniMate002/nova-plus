@@ -3,6 +3,7 @@ import { allJobs } from "./data"
 
 
 export interface jobI {
+    id: number,
     position: string,
     location: string,
     type: string

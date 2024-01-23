@@ -5,9 +5,9 @@ interface SingleJobI extends jobI {
     key: string
 }
 
-const SingleJob:React.FC<SingleJobI> = ({location, position, type}) => {
+const SingleJob:React.FC<SingleJobI> = ({location, position, type, id}) => {
     return (
-        <div className="flex items-center gap-10 text-sm">
+        <div className={`job--trigger--${id} flex items-center gap-10 text-sm relative left-[-200%]`}>
             <p className="text-white underline w-[40%]">{position}</p>
             <p className="text-white w-[20%]">{location}</p>
             <p className="text-white w-[15%]">{type}</p>

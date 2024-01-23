@@ -10,6 +10,7 @@ import WorldMap from "../mainpage/WorldMap/WorldMap";
 import JoinUs from "../mainpage/JoinUs/JoinUs";
 import News from "../mainpage/News/News";
 import Explore from "../mainpage/Explore/Explore";
+import { createGameTimeLine, createJobsAnimation, createNewsAnimation, createWorldMapAnimation } from "../../animation/Animation";
 
 
 const MainPage:React.FC = () => {
@@ -37,12 +38,14 @@ const MainPage:React.FC = () => {
                 end: 'center 40%',
                 onEnter: () => {
                     gsap.to('.we--are--trigger', {
-                        opacity: 1
+                        opacity: 1,
+                        zIndex: 100
                     })
                 },
                 onLeaveBack: () => {
                     gsap.to('.we--are--trigger', {
-                        opacity: 0
+                        opacity: 0,
+                        zIndex: 100
                     })
                 }
             }
@@ -52,30 +55,30 @@ const MainPage:React.FC = () => {
         const games2Changer = createGameTimeLine('70', '32', 2)
         const games3Changer = createGameTimeLine('80', '24', 3)
 
+        const worldMapChanger = createWorldMapAnimation('20', '80', 1)
+        const worldMap2Changer = createWorldMapAnimation('12', '82', 2)
+        const worldMap3Changer = createWorldMapAnimation('18', '82', 3)
+        const worldMap4Changer = createWorldMapAnimation('18', '82', 4)
+        // const worldMap5Changer = createWorldMapAnimation('18', '82', 5)
+
+        const jobsTimeLine = createJobsAnimation('10', 1)
+        const jobs2TimeLine = createJobsAnimation('13', 2)
+        const jobs3TimeLine = createJobsAnimation('16', 3)
+        const jobs4TimeLine = createJobsAnimation('19', 4)
+        const jobs5TimeLine = createJobsAnimation('23', 5)
+        const jobs6TimeLine = createJobsAnimation('27', 6)
+        const jobs7TimeLine = createJobsAnimation('30', 7)
+        const jobs8TimeLine = createJobsAnimation('34', 8)
+        const jobs9TimeLine = createJobsAnimation('39', 9)
+        const jobs10TimeLine = createJobsAnimation('43', 10)
+
+        const newsTimLine = createNewsAnimation('20', 0)
+        for(let i = 1; i < 10; i++){
+            createNewsAnimation('30', i)
+        }
     }, [])
 
-    function createGameTimeLine (start: string, end: string, cardNumber: number):gsap.core.Timeline {
-        return gsap.timeline({
-            scrollTrigger:{
-                trigger: '.second--block',
-                scrub: true,
-                start: `${start}% center`,
-                end: `${end}% center`,
-                onEnter: () => {
-                    gsap.to(`.single--card--trigger--${cardNumber}`, {
-                        // scale: 1
-                        opacity: 1
-                    })
-                },
-                onLeaveBack: () => {
-                    gsap.to(`.single--card--trigger--${cardNumber}`, {
-                        // scale: 0
-                        opacity: 0
-                    })
-                }
-            }
-        })
-    }
+
 
     return (
         <div className="all--main--page min-h-[100vh] overflow-hidden bg-slate-950">
@@ -91,13 +94,13 @@ const MainPage:React.FC = () => {
             <div className={`third--trigger min-h-[100vh]  text-white border-b-8 border-t-8 border-violet-800`}>
                 <WordAboutUs />
             </div>
-            <div className={`min-h-[100vh]  text-white`}>
+            <div className={`fourth--trigger min-h-[100vh]  text-white`}>
                 <WorldMap />
             </div>
-            <div className={`min-h-[100vh]  text-white`}>
+            <div className={`fifth-trigger min-h-[100vh]  text-white`}>
                 <JoinUs />
             </div>
-            <div className={`min-h-[100vh]  text-white`}>
+            <div className={`sixth--trigger min-h-[100vh]  text-white`}>
                 <News />
             </div>
             <div className={` text-white`}>

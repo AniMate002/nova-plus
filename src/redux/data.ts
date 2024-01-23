@@ -118,60 +118,70 @@ export const allCities: citiesType = [Minks, Warsaw, Paris, Berlin, Washington, 
 
 
 const job1: jobI = {
+    id: 1,
     position: 'Senior HR Business Partner',
     location: 'Warszawa / Poland',
     type: 'Full-time'
 };
 
 const job2: jobI = {
+    id: 2,
     position: 'Software Engineer',
     location: 'San Francisco, CA, USA',
     type: 'Permanent'
 };
 
 const job3: jobI = {
+    id: 3,
     position: 'Marketing Specialist',
     location: 'London, UK',
     type: 'Contract'
 };
 
 const job4: jobI = {
+    id: 4,
     position: 'Data Scientist',
     location: 'Berlin, Germany',
     type: 'Part-time'
 };
 
 const job5: jobI = {
+    id: 5,
     position: 'Product Manager',
     location: 'New York, NY, USA',
     type: 'Remote'
 };
 
 const job6: jobI = {
+    id: 6,
     position: 'Financial Analyst',
     location: 'Tokyo, Japan',
     type: 'Full-time'
 };
 
 const job7: jobI = {
+    id: 7,
     position: 'Customer Support Representative',
     location: 'Sydney, Australia',
     type: 'Permanent'
 };
 
 const job8: jobI = {
+    id: 8,
     position: 'UX/UI Designer',
     location: 'Toronto, Canada',
     type: 'Contract'
 };
 
 const job9: jobI = {
+    id: 9,
     position: 'Sales Executive',
     location: 'Mumbai, India',
     type: 'Full-time'
 };
 
 const job10: jobI = {
+    id: 10,
     position: 'IT Support Specialist',
     location: 'Cape Town, South Africa',
     type: 'Remote'
