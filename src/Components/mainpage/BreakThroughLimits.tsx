@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect, useState } from "react";
 import Card from "./Card";
+import PingBall from "./PingBall/PingBall";
 
 
 const BreakThroughLimits:React.FC = () => {
@@ -34,19 +35,7 @@ const BreakThroughLimits:React.FC = () => {
     }, [])
 
     function addParallax():void {
-        // if(!isParallax){
-        //     document.addEventListener('mousemove', parallax);
-        //     setIsParallax(true)
-        // }
-        // else{
-        //     document.documentElement.scrollTo({
-        //         top: 800,
-        //         behavior: 'smooth'
-        //     })
-        // }
         document.addEventListener('mousemove', parallax);
-
-          
         function parallax(e: MouseEvent) {
             const els:NodeListOf<HTMLDivElement> = document.querySelectorAll('.fa-solid')
             els.forEach((move: HTMLElement) => {
@@ -65,7 +54,7 @@ const BreakThroughLimits:React.FC = () => {
     return (
         <div>
             <div className="life--game flex items-center justify-center h-[100vh] flex-col">
-                <p className="text-white text-[100px]">Life is</p>
+                <p className="text-white uppercase font-bold text-[200px] tracking-widest">nova plus</p>
                 <button onClick={addParallax} className="text-white game--btn uppercase py-4 px-10 outline outline-violet-800 hover:bg-violet-800 cursor-pointer relative 
                 ">game</button>
             </div>
@@ -74,12 +63,13 @@ const BreakThroughLimits:React.FC = () => {
                 <p className="Haptik font-bold text-white first--break text-[250px] absolute right-[-1000px] top-[7%]">_remove</p>
                 <p className="Haptik font-bold text-white second--break text-[250px] absolute right-full top-[35%]">#limits</p>
             </div>
-            <div className="parallax--items">
+            {/* <div className="parallax--items">
                 <p data-parallax="10" className="parallax--item fa-solid fa-plus text-white text-[50px] left-10 top-[20%] rotate-12 absolute"></p>
                 <p data-parallax="3" className="parallax--item fa-solid fa-gamepad text-white text-[100px] right-[23%] top-[30%] rotate-12 absolute"></p>
                 <p data-parallax="-2" className="parallax--item fa-solid fa-puzzle-piece text-white text-[70px] right-[30%] top-[67%] rotate-12 absolute"></p>
                 <p data-parallax="-5" className="parallax--item fa-solid fa-terminal text-white text-[80px] left-[30%] top-[75%] rotate-12 absolute"></p>
-            </div>
+            </div> */}
+            <PingBall />
 
         </div>
     );

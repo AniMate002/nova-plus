@@ -66,7 +66,7 @@ font-family: 'Montserrat', sans-serif;
 
 
 .mainImage{
-    background-image: url(images/mainBg2.jpg);
+    /* background-image: url(images/mainBg2.jpg); */
     background-position: center;
 }
 
@@ -187,4 +187,38 @@ font-family: 'Montserrat', sans-serif;
 
 .purple--shadow{
     box-shadow: 0 0 20px #6733c8;
+}
+
+
+@keyframes thornMove {
+    0%  {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+@keyframes cubeJump {
+    0% {
+        top: 80%;
+        rotate: 20deg;
+    }
+    50% {
+        top: 70%;
+        rotate: 45deg;
+    }
+    100% {
+        top: 80%;
+        rotate: 90deg;
+    }
+}
+
+.main--thorn{
+    animation: thornMove 2s infinite linear;
+}
+
+.start--jump {
+    animation: cubeJump 0.4s linear;
 }
