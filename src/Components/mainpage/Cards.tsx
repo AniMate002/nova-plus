@@ -13,7 +13,10 @@ const Cards:React.FC = () => {
     })
 
     return (
-        <div className="flex flex-row items-center justify-between w-full mt-20">
+        <div className="flex items-center justify-between w-full mt-20
+        flex-col
+        md:flex-row
+        ">
             { renderedCards }
         </div>
     );

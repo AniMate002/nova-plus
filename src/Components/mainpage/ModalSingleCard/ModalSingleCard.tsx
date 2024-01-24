@@ -41,20 +41,52 @@ const ModalSingleCard:React.FC = () => {
                     <i className="fa-solid fa-xmark"></i>
                 </button>
             </header>
-            <div className='flex flex-row justify-around items-start relative z-50 mt-28 w-full'>
+            <div className='flex justify-around  relative z-50  w-full
+            flex-col items-center gap-4 mt-20
+            sm:mt-14
+            lg:flex-row lg:items-start lg:gap-0 lg:mt-28
+            '>
                 <div className="flex gap-5">
-                    <button onClick={() => arrorClickHandler(-1)} className="text-white transition-all hover:text-violet-800 text-5xl hover:scale-[1.1]"><i className="fa-solid fa-chevron-left"></i></button>
-                    <img src={cardToShow?.image} alt={cardToShow?.image} className="w-[700px] outline outline-8 outline-violet-800 rounded-sm"/>
-                    <button onClick={() => arrorClickHandler(1)} className="text-white transition-all hover:text-violet-800 text-5xl hover:scale-[1.1] "><i className="fa-solid fa-chevron-right"></i></button>
+                    <button onClick={() => arrorClickHandler(-1)} className="text-white transition-all hover:text-violet-800 hover:scale-[1.1]
+                    hidden
+                    sm:inline-block sm:text-2xl
+                    xl:text-5xl
+                    "><i className="fa-solid fa-chevron-left"></i></button>
+                    <img src={cardToShow?.image} alt={cardToShow?.image} className=" outline  outline-violet-800 rounded-sm
+                    w-[300px] outline-2
+                    sm:w-[500px]
+                    lg:w-[570px] lg:outline-4
+                    xl:w-[700px] xl:outline-8
+                    "/>
+                    <button onClick={() => arrorClickHandler(1)} className="text-white transition-all hover:text-violet-800  hover:scale-[1.1]
+                    hidden
+                    sm:inline-block sm:text-2xl
+                    xl:text-5xl
+                    "><i className="fa-solid fa-chevron-right"></i></button>
                 </div>
                 <div className=" text-white">
-                    <h3 className="text-[40px] font-bold uppercase text-center">{cardToShow?.title}</h3>
+                    <h3 className="font-bold uppercase text-center
+                    text-[20px]
+                    lg:text-[40px]
+                    ">{cardToShow?.title}</h3>
                     <div className="block mx-auto h-[2px] w-[10%] my-6 bg-white"></div>
                     <div className="text-center"><i className="fa-solid fa-star"></i>{cardToShow?.stars}</div>
-                    <div className="w-[600px] mt-4">{cardToShow?.description}</div>
-                    <div className="w-full mt-10 flex gap-4">
-                        <button className="text-white px-8 py-4 bg-violet-800 rounded-xl">Buy now</button>
-                        <button className="bg-white px-8 py-4 text-violet-800 rounded-xl font-semibold">Rate</button>
+                    <div className=" mt-4
+                    text-[12px] w-[300px]
+                    sm:w-[500px]
+                    lg:text-md lg:w-[400px]
+                    xl:text-base xl:w-[600px]
+
+                    ">{cardToShow?.description}</div>
+                    <div className="w-full mt-10 flex gap-4 items-center">
+                        <button className="text-white bg-violet-800 rounded-xl
+                        px-4 py-4 text-[12px]
+                        lg:px-8 lg:py-4 lg:text-base
+                        ">Buy now</button>
+                        <button className="bg-white text-violet-800 rounded-xl font-semibold
+                        px-6 py-4 text-[12px]
+                        lg:px-8 lg:py-4 lg:text-base
+                        ">Rate</button>
                     </div>
                 </div>
             </div>

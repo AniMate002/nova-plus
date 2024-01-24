@@ -34,7 +34,9 @@ const SingleCard:React.FC<ISigleCard> = ({title, image, id}) => {
         dispatch(setActiveCard(id))
     }
     return (
-        <Tilt options={singleCardOptions} className={`w-[34%] hover:z-50 cursor-pointer single--card--trigger--${id} opacity-0`}>
+        <Tilt options={singleCardOptions} className={`w-[34%] hover:z-20 cursor-pointer single--card--trigger--${id} opacity-0 
+        w-auto
+        md:w-full`}>
             <div onClick={showModalSingleCard} onMouseEnter={singleCardHoverHandler} onMouseLeave={singleCardLeaveHandler} className='w-full relative hover:outline hover:outline-8 hover:outline-violet-600 hover:outline-offset-[-20px] hover:scale-[1.06]'>
                 <img src={image} alt='card1'/>
                 <div className={`absolute top-0 left-0 w-full h-full hidden--content--single--card${id} opacity-[0] `}>

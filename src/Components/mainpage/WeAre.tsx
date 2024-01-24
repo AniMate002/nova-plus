@@ -58,15 +58,22 @@ const WeAre:React.FC = () => {
         <div className=" border-violet-800  text-white relative ">
             <p className="uppercase  
             text-[20px] ml-[10%] mt-[0px]
-            2xl:text-[30px] 2xl:ml-[20%] 2xl:mt-[12%] 
+            sm:text-[30px]
+            md:ml-[12%]
+            xl:text-[30px] xl:ml-[20%] xl:mt-[12%] 
             ">we are a</p>
             <p className="leading-10   font-bold
             text-[60px] ml-[10%]
-            2xl:text-[170px] 2xl:ml-[20%] 
+            sm:text-[100px]
+            md:text-[140px] md:ml-[12%]
+            xl:text-[170px] xl:ml-[20%] 
             ">creative</p>
             <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" className=" absolute 
-            right-[7%] top-[-50px] h-28
-            2xl:right-[25%] 2xl:top-[-30px] 2xl:h-56
+            right-[17%] top-[-50px] h-20
+            sm:right-[30%] sm:h-28
+            md:right-[20%] md:h-36
+            xl:right-[17%]
+            2xl:right-[25%] 2xl:top-[-30px] xl:h-56
             ">
                 <circle className="progress--rotate" cx="400" cy="400" fill="none"
                     r="200" stroke-width="50" stroke="#6733c8"
@@ -75,7 +82,9 @@ const WeAre:React.FC = () => {
             </svg>
             <div className="flex items-center
             text-[50px] ml-[10%]
-            2xl:text-[170px] 2xl:ml-[20%] 
+            sm:text-[70px]
+            md:ml-[12%] md:text-[100px]
+            xl:text-[170px] xl:ml-[20%] 
             ">game 
                 <div  className={`screenshot--container 
                 hidden
@@ -96,7 +105,9 @@ const WeAre:React.FC = () => {
                 <h3 className="text-center mt-40 font-bold">we are</h3>
                 <h2 className="text-violet-800 leading-10 Montserrat font-bold text-center mb-10  uppercase text-[50px] ">nova plus</h2>
                 <div className="block bg-stone-800 mx-auto w-[30%] h-[2px]"></div>
-                <div className="mt-10 w-[60%] block mx-auto text-center text-slate-400">    
+                <div className="mt-10 w-[60%] block mx-auto text-center text-slate-400 
+                text-sm
+                lg:text-base">    
                     NovaPlus stands as the epitome of cool and innovation in the game development industry, setting itself apart through
                     a combination of groundbreaking creativity, cutting-edge technology,
                     and an unwavering commitment to delivering unparalleled gaming experiences.
