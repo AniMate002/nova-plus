@@ -101,3 +101,56 @@ export function createNewsAnimation(start: string, newsNumber: number):gsap.core
 }
 
 
+export function showGame():void{
+    gsap.to('.game--container', {
+        opacity: 1
+    })
+}
+
+
+
+
+
+
+
+export const showHeaderSmall = () => {
+    gsap.to('.header--small', {
+        display: 'block',
+        onComplete: () => {
+            gsap.to('.header--small', {
+                top: 0,
+                duration: 1,
+                onComplete: () => {
+                    gsap.to('.block--link--small--header', {
+                        top: 0
+                    })
+                }
+            })
+            gsap.to('.link--header--small', {
+                top:0,
+                duration: 1.7,
+                
+            })
+        }
+    })
+    
+}
+export const closeHeaderSmall = () => {
+    gsap.to('.header--small', {
+        top: '100%',
+        duration: 1,
+        onComplete:() => {
+            gsap.to('.header--small', {
+                display: 'none',
+            })
+        }
+    })
+    gsap.to('.link--header--small', {
+        top: '100%',
+        duration: 1.7,
+    })
+    gsap.to('.block--link--small--header', {
+        top: '100%',
+        
+    })
+}

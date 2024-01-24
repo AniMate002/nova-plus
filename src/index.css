@@ -113,17 +113,16 @@ font-family: 'Montserrat', sans-serif;
 
 
 .screenshot--container{
-    display: block;
     overflow: hidden;
     width: 100px;
     height: 150px;
     margin-top: 2%;
 
 }
-
+/* 
 .screenshot--itself{
     min-width:  300px;
-}
+} */
 
 
 .white--logo {
@@ -215,7 +214,17 @@ font-family: 'Montserrat', sans-serif;
     }
 }
 
-.main--thorn{
+
+@keyframes rotate180 {
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 180deg;
+    }
+}
+
+.move--thorn{
     animation: thornMove 2s infinite linear;
 }
 

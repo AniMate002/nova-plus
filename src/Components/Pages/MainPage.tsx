@@ -11,6 +11,8 @@ import JoinUs from "../mainpage/JoinUs/JoinUs";
 import News from "../mainpage/News/News";
 import Explore from "../mainpage/Explore/Explore";
 import { createGameTimeLine, createJobsAnimation, createNewsAnimation, createWorldMapAnimation } from "../../animation/Animation";
+import HeaderSmallScreens from "../Overlay/HeaderSmallScreens";
+import HidingHeader from "../Overlay/HidingHeader";
 
 
 const MainPage:React.FC = () => {
@@ -84,6 +86,8 @@ const MainPage:React.FC = () => {
         <div className="all--main--page min-h-[100vh] overflow-hidden bg-slate-950">
             <Border />
             <Header />
+            <HeaderSmallScreens />
+            <HidingHeader />
             <ModalSingleCard />
             <div className={`h-[100vh] first--trigger mainImage `}>
                 <BreakThroughLimits />

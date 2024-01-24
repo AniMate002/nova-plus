@@ -31,7 +31,8 @@ const Border:React.FC = () => {
         })
     }, [])
     return (
-        <div className="main--border fixed z-40 w-[100%] min-h-[100vh] outline outline-[25px] outline-offset-[-40px] outline-violet-800 pointer-events-none">
+        <div className="main--border fixed z-40 w-[100%] min-h-[100vh] outline outline-[25px] outline-offset-[-40px] outline-violet-800 pointer-events-none
+        hidden xl:block">
         </div>
     );
 }

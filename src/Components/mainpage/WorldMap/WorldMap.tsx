@@ -27,7 +27,7 @@ const WorldMap:React.FC = () => {
             <div className="block w-[80%] mx-auto select-none">
                 <div className='world--map--1 text-end scale-0 relative z-30'>
                     <p className='uppercase Haptik text-7xl text-violet-500 font-bold'>Our</p>
-                    <p className='uppercase Haptik text-9xl text-white font-bold relative z-20 leading-10'>offices</p>
+                    <p className='uppercase Haptik text-9xl text-white font-bold relative z-20 leading-10 left-[-30%]'>offices</p>
                 </div>
                 <div className='world--map--2 scale-0 block mx-auto mt-40 ml-[27%]'>
                     <p className='uppercase Haptik text-6xl text-violet-500 font-bold'>around</p>
