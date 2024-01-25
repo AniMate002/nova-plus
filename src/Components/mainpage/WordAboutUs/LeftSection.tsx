@@ -2,14 +2,28 @@
 
 const LeftSection:React.FC = () => {
     return (
-        <div className="w-[30%]">
+        <div className="
+        w-full
+        lg:w-[30%]">
             <div className="font-bold uppercase">
-                <p className="text-[100px]">word</p>
+                <p className="
+                text-[70px]
+                lg:text-[100px]
+                ">word</p>
                 <div className="flex items-end mt-[-20px]">
-                    <p className="text-[50px]">about</p>
-                    <p className="text-[110px] leading-10">us</p>
+                    <p className="
+                    text-[35px]
+                    lg:text-[50px]
+                    ">about</p>
+                    <p className="leading-10
+                    text-[80px]
+                    lg:text-[110px]
+                    ">us</p>
                 </div>
-                <p className="text-violet-800 text-[30px] leading-none mt-[-8px] line-through">nova plus</p>
+                <p className="text-violet-800  leading-none mt-[-8px] line-through
+                text-[22px]
+                lg:text-[30px]
+                ">nova plus</p>
             </div>
             <div className="text-justify tracking-tight mt-10 text--font text-sm text-slate-500">
                 <p className=" mb-2">Established in 2005, Nova Plus embarked on a journey to redefine gaming by fusing technological advancements with creative storytelling. Their early success came in the form of <span className="text--highlight">"Nebula Quest"</span>, a groundbreaking title that captivated gamers with its innovative mechanics and compelling narrative.</p>
