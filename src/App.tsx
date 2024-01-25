@@ -7,7 +7,6 @@ import Lenis from '@studio-freight/lenis'
 const App:React.FC = () => {      
     return (
         <div>
-            <MainPage />
         </div>
     );
 }

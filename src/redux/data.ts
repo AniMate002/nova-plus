@@ -1,7 +1,14 @@
-import { cardI, cardsType } from "./modalCardReducer";
+import { cardI, cardsType } from "./gamesReducer";
 import card1 from '../images/cards/card1.jpg'
 import card2 from '../images/cards/card2.jpg'
 import card3 from '../images/cards/card3.jpg'
+import card4 from '../images/cards/card4.jpeg'
+import card5 from '../images/cards/card5.jpg'
+import card6 from '../images/cards/card6.jpg'
+import card7 from '../images/cards/card7.png'
+import card8 from '../images/cards/card8.png'
+import card9 from '../images/cards/card9.jpg'
+
 import { citiesType, cityI } from "./worldMapReducer";
 import MinksImage from '../images/cities/Minsk.jpg'
 import WarsawImage from '../images/cities/Warsaw.jpg'
@@ -24,39 +31,139 @@ import news9_1 from '../images/news/news9_1.jpg'
 import news10_1 from '../images/news/news10_1.png'
 
 
+const pc = 'fa-solid fa-desktop'
+const ps = 'fa-brands fa-playstation'
+const xbox = 'fa-brands fa-xbox'
+const mobile = 'fa-solid fa-mobile-screen-button'
 
-
-
-const firstCard: cardI = {
+const firstGame: cardI = {
     id: 1,
     title: 'Apex Vanguard',
     description: "Gear up for a high-octane, futuristic experience in 'Apex Vanguard,' an adrenaline-fueled PC game that catapults players into a relentless world of advanced technology, ruthless corporations, and intense combat. As an elite Vanguard operative, you are the last line of defense against a looming cybernetic threat. It's time to prove your mettle in the apex of warfare.",
     stars: 4.5,
     image: card1,
+    tags: ['Futuristic', 'Cybernetic Threat', 'PC Game', 'Action', 'Shooter'],
+    yearReleased: 2023,
+    gameEngine: 'Unity',
+    platforms: [pc, ps],
+    type: 'First-Person Shooter',
 }
 
-
-const secondCard: cardI = {
+const secondGame: cardI = {
     id: 2,
     title: 'Starlight Seraph',
     description: "Prepare to soar among the cosmos in 'Starlight Seraph,' a mesmerizing PC game that propels players into an interstellar odyssey filled with cosmic wonders and celestial challenges. As the chosen Seraph, your destiny unfolds across the vastness of space, blending futuristic technology with the enchantment of the stars.",
     stars: 4.7,
     image: card2,
+    tags: ['Interstellar Odyssey', 'Cosmic Wonders', 'PC Game', 'Adventure', 'Simulation'],
+    yearReleased: 2024,
+    gameEngine: 'Unreal Engine',
+    platforms: [ps, xbox],
+    type: 'Space Simulation',
 }
 
-const thirdCard: cardI = {
+const thirdGame: cardI = {
     id: 3,
     title: 'Celestial Citadel',
     description: "Embark on an otherworldly journey in 'Celestial Citadel,' a breathtaking PC game that transports players to the mystical realm of an ancient celestial city suspended among the stars. As a courageous adventurer, you find yourself drawn to the enigmatic Citadel, a place where the boundaries between magic and technology blur, and the secrets of the universe unfold.",
     stars: 4.2,
     image: card3,
+    tags: ['Otherworldly Journey', 'Ancient Celestial City', 'PC Game', 'RPG', 'Exploration'],
+    yearReleased: 2022,
+    gameEngine: 'Unity',
+    platforms: [ps],
+    type: 'Role-Playing Game',
+}
+
+const fourthGame: cardI = {
+    id: 4,
+    title: 'Chrono Nexus',
+    description: "Embark on a time-bending adventure in 'Chrono Nexus,' a mind-bending PC game that challenges players to navigate through parallel timelines and unravel the mysteries of a temporal anomaly. As a skilled chrononaut, you must manipulate time to solve puzzles, overcome obstacles, and prevent a catastrophic time collapse.",
+    stars: 4.6,
+    image: card4,
+    tags: ['Time-Bending Adventure', 'Temporal Anomaly', 'PC Game', 'Puzzle', 'Sci-Fi'],
+    yearReleased: 2025,
+    gameEngine: 'Unreal Engine',
+    platforms: [pc, ps],
+    type: 'Puzzle Adventure',
+}
+
+const fifthGame: cardI = {
+    id: 5,
+    title: 'Aetherial Ascendance',
+    description: "Ascend to new heights in 'Aetherial Ascendance,' an ethereal PC game that transports players to floating realms where gravity is just a suggestion. As a winged Aetherian, explore breathtaking landscapes, solve gravity-defying puzzles, and uncover the ancient secrets of the Aetherial Realm.",
+    stars: 4.8,
+    image: card5,
+    tags: ['Floating Realms', 'Aetherian', 'PC Game', 'Exploration', 'Puzzle'],
+    yearReleased: 2023,
+    gameEngine: 'Unity',
+    platforms: [mobile],
+    type: 'Exploration Puzzle',
+}
+
+const sixthGame: cardI = {
+    id: 6,
+    title: 'Mystic Alchemy',
+    description: "Immerse yourself in the mystical art of alchemy in 'Mystic Alchemy,' a spellbinding PC game that combines potion crafting, magical exploration, and mythical creatures. As a prodigious alchemist, journey through enchanted lands, brew powerful potions, and discover the hidden alchemical secrets that shape the fate of the magical realm.",
+    stars: 4.4,
+    image: card6,
+    tags: ['Alchemy', 'Magical Exploration', 'PC Game', 'Simulation', 'Fantasy'],
+    yearReleased: 2024,
+    gameEngine: 'Unreal Engine',
+    platforms: [pc, xbox, ps],
+    type: 'Alchemy Simulation',
+}
+
+const seventhGame: cardI = {
+    id: 7,
+    title: 'Eclipse Empires',
+    description: "Lead your faction to dominance in 'Eclipse Empires,' a grand strategy PC game set in a vast and dynamic world. As a strategic mastermind, forge alliances, wage epic wars, and navigate the intricate web of diplomacy to shape the destiny of your empire in the shadow of a celestial eclipse.",
+    stars: 4.9,
+    image: card7,
+    tags: ['Grand Strategy', 'Empire Building', 'PC Game', 'Warfare', 'Diplomacy'],
+    yearReleased: 2026,
+    gameEngine: 'Unity',
+    platforms: [ps],
+    type: 'Grand Strategy',
+}
+
+const eighthGame: cardI = {
+    id: 8,
+    title: 'Mythic Mages: Arcane Revival',
+    description: "Unleash the power of ancient magic in 'Mythic Mages: Arcane Revival,' a spellbinding PC game where players take on the role of skilled mages in a world recovering from a magical apocalypse. Explore mystical realms, master arcane spells, and restore balance to a world on the brink of mystical chaos.",
+    stars: 4.7,
+    image: card8,
+    tags: ['Magical Apocalypse', 'Arcane Spells', 'PC Game', 'Fantasy', 'Adventure'],
+    yearReleased: 2025,
+    gameEngine: 'Unreal Engine',
+    platforms: [mobile],
+    type: 'Fantasy Adventure',
+}
+
+const ninthGame: cardI = {
+    id: 9,
+    title: 'Neon Velocity',
+    description: "Race through futuristic cityscapes in 'Neon Velocity,' a high-speed racing PC game that combines adrenaline-pumping action with sleek neon aesthetics. Customize your hyper-velocity vehicle, compete in intense races, and dominate the neon-lit tracks in a quest to become the ultimate champion.",
+    stars: 4.6,
+    image: card9,
+    tags: ['Futuristic Racing', 'Neon Aesthetics', 'PC Game', 'Action', 'Racing'],
+    yearReleased: 2024,
+    gameEngine: 'Unity',
+    platforms: [ps, xbox],
+    type: 'Racing Game',
 }
 
 
 export const cardsArray:cardsType = [
-    firstCard,
-    secondCard,
-    thirdCard
+    firstGame,
+    secondGame,
+    thirdGame,
+    fourthGame,
+    fifthGame,
+    sixthGame,
+    seventhGame,
+    eighthGame,
+    ninthGame
 ]
 
 

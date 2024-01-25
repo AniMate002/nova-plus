@@ -7,7 +7,7 @@ const SwiperQuotes = () => {
         w-full
         lg:w-[70%]
         ">
-            <Swiper slidesPerView={1.3} spaceBetween={20} className='w-full' freeMode={{sticky: false}} autoplay={{delay:2000}} modules={[Autoplay]} speed={1500}>
+            <Swiper slidesPerView={1.5} loop={true} centeredSlides={true} spaceBetween={20} className='w-full' freeMode={{sticky: false}} autoplay={{delay:2000}} modules={[Autoplay]} speed={1500}>
                 <SwiperSlide >
                     <div className='teal--quote bg-teal-700  cursor-pointer 
                     w-[80%] p-2

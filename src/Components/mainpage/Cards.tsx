@@ -6,10 +6,10 @@ import { useAppSelector } from '../../redux/hook';
 import SingleCard from './SingleCard';
 
 const Cards:React.FC = () => {
-    const { cards } = useAppSelector(state => state.modalCard)
+    const { cards } = useAppSelector(state => state.games)
 
-    const renderedCards = cards.map(card => {
-        return <SingleCard key={card.id} {...card} />
+    const renderedCards = cards.slice(0, 3).map(game => {
+        return <SingleCard key={game.id} {...game} />
     })
 
     return (

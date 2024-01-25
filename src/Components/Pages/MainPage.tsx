@@ -17,13 +17,20 @@ import HidingHeader from "../Overlay/HidingHeader";
 
 const MainPage:React.FC = () => {
     useEffect(() => {
+        gsap.fromTo('.all--main--page', {
+            backgroundColor: '#6733c8'
+        }, {
+            backgroundColor: '#020617'
+        })
         const footerBgChanger = gsap.timeline({
             scrollTrigger:{
                 trigger: '.main-explore-trigger',
                 scrub: true,
                 start: '20% center',
                 onEnter: () => {
-                    gsap.to('.all--main--page', { duration: 1.0, backgroundColor: '#6733c8'})
+                    if(document.documentElement.scrollTop > 100)
+                        gsap.to('.all--main--page', { duration: 1.0, backgroundColor: '#6733c8'})
+                        // alert(document.documentElement.scrollTop)
                 },
                 onLeaveBack: () => {
                     gsap.to('.all--main--page', { duration: 1.0, backgroundColor: '#020617'})

@@ -11,6 +11,8 @@ import { store } from './redux/store';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/autoplay'
+import MainPage from './Components/Pages/MainPage';
+import GamesPage from './Components/Pages/GamesPage';
 
 
 const root = ReactDOM.createRoot(
@@ -20,8 +22,12 @@ const root = ReactDOM.createRoot(
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <MainPage />,
   },
+  {
+    path: '/games',
+    element: <GamesPage />
+  }
 ]);
 
 root.render(

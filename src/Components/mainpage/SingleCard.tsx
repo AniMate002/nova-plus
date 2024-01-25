@@ -3,7 +3,7 @@ import { singleCardOptions } from '../../tiltOptions';
 import { gsap } from "gsap";
 import { useRef } from 'react';
 import ModalSingleCard from "../mainpage/ModalSingleCard/ModalSingleCard";
-import { cardI, setActiveCard } from '../../redux/modalCardReducer';
+import { cardI, setActiveCard } from '../../redux/gamesReducer';
 import { useAppDispatch } from '../../redux/hook';
 
 

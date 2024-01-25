@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import { useAppDispatch, useAppSelector } from "../../../redux/hook";
-import { cardI, setActiveCard } from "../../../redux/modalCardReducer";
+import { cardI, setActiveCard } from "../../../redux/gamesReducer";
 import { gsap } from "gsap";
 
 
 
 const ModalSingleCard:React.FC = () => {
-    const { activeCard, cards } = useAppSelector(state => state.modalCard)
+    const { activeCard, cards } = useAppSelector(state => state.games)
     const [cardToShow, setCardToShow] = useState<cardI>()
     const dispatch = useAppDispatch()
     useEffect(() => {
