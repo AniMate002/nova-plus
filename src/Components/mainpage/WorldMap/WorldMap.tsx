@@ -23,19 +23,49 @@ const WorldMap:React.FC = () => {
 
     return (
         <div className='pt-52 relative pb-[800px]'>
-            <h3 className='uppercase text-white font-bold text-4xl Haptik block w-[80%] mx-auto mb-4'>nova plus</h3>
+            {/* <h3 className='uppercase text-white font-bold Haptik block w-[80%] mx-auto mb-4
+            text-sm
+            lg:text-4xl
+            '>nova plus</h3> */}
             <div className="block w-[80%] mx-auto select-none">
                 <div className='world--map--1 text-end scale-0 relative z-30'>
-                    <p className='uppercase Haptik text-7xl text-violet-500 font-bold'>Our</p>
-                    <p className='uppercase Haptik text-9xl text-white font-bold relative z-20 leading-10 left-[-30%]'>offices</p>
+                    <p className='uppercase Haptik  text-violet-500 font-bold
+                    text-sm
+                    sm:text-5xl
+                    md:text-6xl
+                    lg:text-7xl
+                    '>Our</p>
+                    <p className='uppercase Haptik  text-white font-bold relative z-20 leading-10 left-[-30%]
+                    text-md top-[-10px]
+                    sm:text-3xl
+                    md:text-6xl
+                    lg:text-9xl lg:top-0
+                    '>offices</p>
                 </div>
-                <div className='world--map--2 scale-0 block mx-auto mt-40 ml-[27%]'>
-                    <p className='uppercase Haptik text-6xl text-violet-500 font-bold'>around</p>
-                    <p className='uppercase Haptik text-6xl text-white font-bold'>the</p>
+                <div className='world--map--2 scale-0 block mx-auto  ml-[27%]
+                mt-0
+                sm:mt-20
+                md:mt-24
+                lg:mt-24
+                '>
+                    <p className='uppercase Haptik  text-violet-500 font-bold
+                    text-sm
+                    lg:text-6xl
+                    '>around</p>
+                    <p className='uppercase Haptik  text-white font-bold
+                    text-8xl
+                    lg:text-6xl
+                    '>the</p>
                 </div>
-                <p className="world--map--3 scale-0 text-white uppercase font-bold text-8xl text-end mr-48">world</p>
+                <p className="world--map--3 scale-0 text-white uppercase font-bold  text-end mr-48
+                text-6xl
+                lg:text-8xl
+                ">world</p>
             </div>
-            <div className='world--map--4 scale-0 w-[80%] absolute top-0 left-[50%] translate-x-[-50%] z-10'>
+            <div className='world--map--4 scale-0 w-[80%] absolute left-[50%] translate-x-[-50%] z-10
+            top-[160px]
+            lg:top-0
+            '>
                 <img src={worldMap} alt={worldMap} className='  w-full h-full relative z-20' />
                 { renderedCities }
             </div>

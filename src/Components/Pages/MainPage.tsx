@@ -95,7 +95,7 @@ const MainPage:React.FC = () => {
             <div className={`second--block min-h-[100vh] `}>
                 <WeAre/>
             </div>
-            <div className={`third--trigger min-h-[100vh]  text-white border-b-8 border-t-8 border-violet-800`}>
+            <div className={`third--trigger min-h-[100vh]  text-white  border-violet-800`}>
                 <WordAboutUs />
             </div>
             <div className={`fourth--trigger min-h-[100vh]  text-white`}>

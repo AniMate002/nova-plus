@@ -15,7 +15,6 @@ const CityCard:React.FC<CityCardI> = ({name, left, top, image, description}) => 
         gsap.to(`.city--card--${name}`, {
             opacity: 0,
         })
-        // alert("f")
     }
     return (
         <div className={`${left} ${top} absolute z-40`}>
@@ -30,7 +29,10 @@ const CityCard:React.FC<CityCardI> = ({name, left, top, image, description}) => 
                 </div>
             </div>
             <div onMouseEnter={showCityCard} onMouseLeave={hideCityCard} className=' w-[40px] h-[40px] absolute  z-50'>
-                <button className="bg-white fading--spot rounded-lg w-[10px] h-[10px]"></button>
+                <button className="bg-white fading--spot rounded-lg 
+                w-[5px] h-[5px]
+                lg:w-[10px] lg:h-[10px]
+                "></button>
             </div>
         </div>
     );

@@ -67,8 +67,8 @@ const Minks:cityI = {
     name: "Minks",
     description: 'Minsk, the capital city of Belarus, is a harmonious blend of rich history, vibrant culture, and modern aspirations. Nestled along the banks of the Svislach River, Minsk is a city that gracefully straddles its past and present.',
     image: MinksImage,
-    left: "left-[55%]",
-    top: 'top-[34%]'
+    left: "left-[55%] sm:left-[55%] lg:left-[55%]",
+    top: 'top-[30%] sm:top-[32%] lg:top-[34%]'
 }
 
 const Warsaw:cityI = {
@@ -76,7 +76,7 @@ const Warsaw:cityI = {
     description: 'Warsaw, the capital city of Poland, is a dynamic metropolis that weaves together a tapestry of history, resilience, and contemporary vibrancy.',
     image: WarsawImage,
     left: 'left-[52%]',
-    top: 'top-[35%]'
+    top: 'top-[31%] sm:top-[33%] lg:top-[35%]'
 }
 
 const Paris: cityI = {
@@ -84,7 +84,7 @@ const Paris: cityI = {
     description: 'Paris, often referred to as the "City of Light" (La Ville Lumière), is a timeless and enchanting capital that stands as an iconic symbol of romance, culture, and artistic expression.',
     image: ParisImage,
     left: 'left-[48%]',
-    top: 'top-[36%]'
+    top: 'top-[32%] sm:top-[34%] lg:top-[36%]'
 }
 
 const Berlin: cityI = {
@@ -92,7 +92,7 @@ const Berlin: cityI = {
     description: 'Berlin, the vibrant capital of Germany, is a city that pulsates with history, creativity, and a modern, cosmopolitan spirit. Shaped by a tumultuous past, Berlin has emerged as a symbol of resilience, innovation, and a thriving cultural scene.',
     image: BerlinImage,
     left: 'left-[50%]',
-    top: 'top-[35%]'
+    top: 'top-[31%] sm:top-[33%] lg:top-[35%]'
 }
 
 const Washington: cityI = {
@@ -100,7 +100,7 @@ const Washington: cityI = {
     description: 'Washington, D.C., the capital of the United States, is a city steeped in history, political significance, and cultural richness.',
     image: WashingtonImage,
     left: 'left-[28%]',
-    top: 'top-[37%]'
+    top: 'top-[33%] sm:top-[35%] lg:top-[37%]'
 }
 
 const LasVegas: cityI = {
@@ -108,7 +108,7 @@ const LasVegas: cityI = {
     description: 'Las Vegas, often referred to as the "Entertainment Capital of the World" or "Sin City," is a dazzling oasis in the Nevada desert known for its vibrant nightlife, world-renowned entertainment, and iconic casino resorts.',
     image: LasVegasImage,
     left: 'left-[17%]',
-    top: 'top-[39%]'
+    top: 'top-[35%] sm:top-[37%] lg:top-[39%]'
 }
 
 export const allCities: citiesType = [Minks, Warsaw, Paris, Berlin, Washington, LasVegas]
