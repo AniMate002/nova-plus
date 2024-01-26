@@ -8,8 +8,8 @@ const GamesPage:React.FC = () => {
         <div className="bg-slate-950 min-h-[100vh] overflow-x-hidden">
             <header className="w-full uppercase text-white font-bold text-center py-20 text-5xl">nova plus</header>            
             <GamesSwiper />
-            {/* <FilterGames />
-            <AllGames /> */}
+            <FilterGames />
+            {/* <AllGames /> */}
         </div>
     );
 }

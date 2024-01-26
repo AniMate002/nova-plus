@@ -11,7 +11,11 @@ const FilterGames:React.FC = () => {
     const compareTags = (tag:string):boolean => tag === activeTag
     const renderedTags = tags.slice(0, 11).map(tag => {
         return (
-            <button onClick={() => setActiveTag(compareTags(tag) ? "" : tag)} className={` ${setTextColor(tag)} border-[1px] bg-${setBg(tag)} font-semibold rounded-full px-2 py-1 text-md hover:bg-white hover:text-violet-800 flex items-center gap-2`}>
+            <button onClick={() => setActiveTag(compareTags(tag) ? "" : tag)} className={` ${setTextColor(tag)} border-[1px] bg-${setBg(tag)} font-semibold rounded-full px-2 py-1  hover:bg-white hover:text-violet-800 flex items-center gap-2
+            text-[8px]
+            sm:text-md
+            lg:text-sm
+            `}>
                 {tag}{compareTags(tag) ? <i className="fa-solid fa-xmark"></i> : ''}
             </button>
         )
@@ -35,9 +39,19 @@ const FilterGames:React.FC = () => {
     }
 
     return (
-        <div className="w-[90%] mx-auto mt-48 flex justify-between">
-            <h3 className="text-white font-bold  text-6xl">all games</h3>
-            <div className="flex items-center justify-end w-[50%] ml-auto flex-wrap gap-2">
+        <div className="w-[90%] mx-auto  flex justify-between
+        flex-col mt-28 gap-4
+        sm:flex-row sm:mt-48 sm:gap-0
+        ">
+            <h3 className="text-white font-bold  
+            text-xl
+            sm:text-4xl
+            md:text-6xl
+            ">all games</h3>
+            <div className="flex items-center  ml-auto flex-wrap gap-2
+            w-full justify-start
+            sm:w-[50%] sm:justify-end
+            ">
                 {renderedTags}
             </div>
         </div>
