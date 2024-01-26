@@ -36,6 +36,16 @@ const ps = 'fa-brands fa-playstation'
 const xbox = 'fa-brands fa-xbox'
 const mobile = 'fa-solid fa-mobile-screen-button'
 
+
+export const uniqueTags = [
+    'Futuristic', 'Cybernetic Threat', 'PC Game', 'Action', 'Shooter',
+    'Alchemy', 'Magical Exploration', 'Simulation', 'Fantasy',
+    'Grand Strategy', 'Empire Building', 'Warfare', 'Diplomacy',
+    'Magical Apocalypse', 'Arcane Spells', 'Fantasy', 'Adventure',
+    'Futuristic Racing', 'Neon Aesthetics', 'Racing'
+];
+
+
 const firstGame: cardI = {
     id: 1,
     title: 'Apex Vanguard',

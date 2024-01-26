@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import { cardsArray } from './data'
+import { cardsArray, uniqueTags } from './data'
 
 export interface cardI {
     id: number,
@@ -18,12 +18,16 @@ export type cardsType = cardI[]
 
 interface initialStateI {
     cards: cardsType,
-    activeCard: number
+    activeCard: number,
+    tags: Array<string>,
+    filteredGames: cardsType
 }
 
 const initialState: initialStateI = {
     cards: cardsArray,
-    activeCard: 1
+    activeCard: 1,
+    tags: uniqueTags,
+    filteredGames: []
 }
 
 export const modalCardSlice = createSlice({
@@ -32,9 +36,15 @@ export const modalCardSlice = createSlice({
     reducers:{
         setActiveCard: (state, action) => {
             state.activeCard = action.payload
+        },
+        filterGames: (state, action) => {
+            state.filteredGames = state.cards.filter(card => card.tags.includes(action.payload))
+        },
+        clearGamesFilter: (state) => {
+            state.filteredGames = []
         }
     }
 })
 
-export const { setActiveCard } = modalCardSlice.actions 
+export const { setActiveCard, filterGames, clearGamesFilter } = modalCardSlice.actions 
 export default modalCardSlice.reducer

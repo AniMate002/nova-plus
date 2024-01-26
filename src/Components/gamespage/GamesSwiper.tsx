@@ -17,14 +17,20 @@ const coverFLowSettings = {
 export const getRenderedTags = (tags: Array<string>) => {
     return tags.map((tag: string) => {
         return (
-            <p className='text-white bg-transparent border-[1px] border-white px-8 py-4 rounded-full uppercase text-sm'>{tag}</p>
+            <p className='text-white bg-transparent border-[1px] border-white  rounded-full uppercase 
+            text-[6px] px-1 py-0 lowercase
+            sm:text-sm sm:px-8 sm:py-4
+            '>{tag}</p>
         )
     })
 }
 
 export const getRenderedPlatforms = (platforms: Array<string>) => {
     return platforms.map(platform => {
-        return <p className='text-white text-xl font-semibold'><i className={platform}></i></p>
+        return <p className='text-white  font-semibold
+        text-[8px]
+        sm:text-xl
+        '><i className={platform}></i></p>
     })
 }
 
@@ -40,14 +46,33 @@ const GamesSwiper = () => {
                 <div className='relative w-full h-full'>
                     <div className='w-full h-full absolute bg-black opacity-[0.4] z-10'></div>
                     <img src={game.image} alt={game.image} className=' min-w-[100%] rounded-xl border-2 border-violet-800' />
-                    <div className='absolute w-full h-full z-20 top-0 left-0 px-10 py-10'>
-                        <div className='rounded-full bg-white px-8 py-4 text-violet-800 font-semibold w-fit'>featured</div>
-                        <h2 className='text-center mt-[15%] text-white tracking-widest text-7xl font-bold'>{game.title}</h2>
-                        <div className='absolute bottom-10'>
-                            <div className='mb-10 flex gap-4 ml-4'>
+                    <div className='absolute w-full h-full z-20 top-0 left-0 
+                    px-2 py-2
+                    sm:px-10 sm:py-10
+                    '>
+                        <div className='rounded-full bg-white  text-violet-800 font-semibold w-fit
+                        px-2 py-1 text-[8px]
+                        sm:px-8 sm:py-4 sm:text-base
+                        '>featured</div>
+                        <h2 className='text-center mt-[15%] text-white tracking-widest  font-bold
+                        text-sm
+                        sm:text-7xl
+                        '>{game.title}</h2>
+                        <div className='absolute 
+                        bottom-2
+                        sm:bottom-10
+                        '>
+                            <div className=' flex gap-4 
+
+                            mb-1 ml-1
+                            sm:mb-10 sm:ml-4
+                            '>
                                 {getRenderedPlatforms(game.platforms)}
                             </div>
-                            <div className='flex gap-4'>
+                            <div className='flex  flex-wrap
+                            gap-0
+                            sm:gap-4
+                            '>
                                 {getRenderedTags(game.tags)}
                             </div>
                         </div>
