@@ -9,7 +9,7 @@ const GamesPage:React.FC = () => {
             <header className="w-full uppercase text-white font-bold text-center py-20 text-5xl">nova plus</header>            
             <GamesSwiper />
             <FilterGames />
-            {/* <AllGames /> */}
+            <AllGames />
         </div>
     );
 }

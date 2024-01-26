@@ -16,7 +16,13 @@ const AllGames:React.FC = () => {
     }
 
     return (
-        <div className="w-[90%] mx-auto grid grid-cols-3 mt-20 justify-items-center gap-20">
+        <div className="w-[90%] mx-auto grid  mt-20 justify-items-center 
+        grid-cols-1 gap-10
+        sm:grid-cols-2 sm:gap-5
+        md:grid-cols-2 md:gap-20
+        lg:grid-cols-3 lg:gap-5
+        xl:grid-cols-3 xl:gap-20
+        ">
             {filteredGames.length ? getRenderedGamesCards(filteredGames) : getRenderedGamesCards(cards)}
         </div>
     );
