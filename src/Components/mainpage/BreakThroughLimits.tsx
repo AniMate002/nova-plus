@@ -3,12 +3,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect, useLayoutEffect, useState } from "react";
 import Card from "./Card";
 import PingBall from "./PingBall/PingBall";
-import { changeSpeed, checkPositons, givePoints, jump, makeThornMove } from "./PingBall/GameLogic";
+import { changeSpeed, checkPositons, jump, makeThornMove, stopGame } from "./PingBall/GameLogic";
 import { showGame } from "../../animation/Animation";
 
 
 const BreakThroughLimits:React.FC = () => {
     const [isParallax, setIsParallax] = useState<boolean>(false)
+
+
     useLayoutEffect(() => {
         const timeLine = gsap.timeline({
             scrollTrigger:{
@@ -39,45 +41,47 @@ const BreakThroughLimits:React.FC = () => {
 
 
     const [points, setPoints] = useState<number>(0)
-    const [aliveCube, setAliveCube] = useState<boolean>(true)
+    const [aliveCube, setAliveCube] = useState<boolean>(false)
+
 
     function startGame (){
-
-
-        showGame()        
-
-
+        showGame()
+        setPoints(0)
         const cube:HTMLDivElement | null = document.querySelector('.main--cube')
         const thorn:HTMLDivElement | null = document.querySelector('.main--thorn')
 
-        setPoints(0)
-        setAliveCube(true)
-        const givingPoints = givePoints(points, setPoints)
+        if(thorn && cube && !aliveCube){
 
-
-        if(thorn){
             makeThornMove(thorn)
+    
+            document.addEventListener('mousedown', () => {
+                jump(cube)
+            })
+
+            const givingPoints = setInterval(function(){
+                setPoints(prev => prev + 1)
+            }, 100)
+    
+            const checkingInterval = setInterval(function() {
+                const result: boolean = checkPositons(cube, thorn)
+                setAliveCube(result)
+                if(!result){
+                    stopGame(cube, thorn)
+                    clearInterval(checkingInterval)
+                    clearInterval(givingPoints)
+                }
+            }, 1)
         }
 
-        document.addEventListener('mousedown', function CubeEvent(){
-            if(cube){
-                jump(cube)
-            }
-        })
-
-        const checkAlive = setInterval(() => {
-            if(cube && thorn){
-                checkPositons(cube, thorn, givingPoints, setAliveCube)
-            }
-        }, 1)
     }
 
     useEffect(() => {
         const thorn:HTMLDivElement | null = document.querySelector('.main--thorn')
-        if(thorn){
+        if(thorn)
             changeSpeed(thorn, points)
-        }
     }, [points])
+
+
 
 
     return (
@@ -89,7 +93,7 @@ const BreakThroughLimits:React.FC = () => {
                 2xl:text-[200px]
                 ">nova plus</p>
                 <button onClick={startGame} className="select-none text-white game--btn uppercase py-4 px-10 outline outline-violet-800 hover:bg-violet-800 cursor-pointer relative 
-                ">{aliveCube ? "start" : "restart"}</button>
+                ">{points === 0 ? "start" : "restart"}</button>
             </div>
                 {/* <Card /> */}
             <div>

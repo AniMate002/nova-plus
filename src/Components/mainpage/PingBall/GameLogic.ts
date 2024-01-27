@@ -19,26 +19,18 @@ export function jump(cube: HTMLDivElement): void {
     console.log(cube)
 }
 
-export function checkPositons(cube:HTMLDivElement, thorn: HTMLDivElement, givingPoints: NodeJS.Timer, setAliveCube: (alive:boolean) => void): void{
+export function checkPositons(cube:HTMLDivElement, thorn: HTMLDivElement): boolean{
     const dinoTop = parseInt(window.getComputedStyle(cube).getPropertyValue('top'))
     const thornLeft = parseInt(window.getComputedStyle(thorn).getPropertyValue('left'))
-    if(thornLeft <= 180 && thornLeft >= 100 && dinoTop >= 660){
-        // alert("left: " + thornLeft + " top: " + dinoTop + "You Lost!!!")
-        stopGame(cube, thorn, givingPoints, setAliveCube)
-    }
+    const calculatedDinoTop = dinoTop / window.innerHeight
+    const calculatedThornLeft = thornLeft / window.innerWidth
+    console.log(calculatedDinoTop)
+    return !(calculatedThornLeft <= 0.125 && calculatedThornLeft >= 0.09 && calculatedDinoTop >= 0.78);
 }
 
-export function stopGame(cube:HTMLDivElement, thorn: HTMLDivElement, givingPoints: NodeJS.Timer, setAliveCube: (alive:boolean) => void): void{
+export function stopGame(cube:HTMLDivElement, thorn: HTMLDivElement): void{
     cube.classList.remove(startJumb)
     thorn.classList.remove('move--thorn')
-    clearInterval(givingPoints)
-    setAliveCube(false)
-}
-
-export function givePoints(points: number, setPoints: React.Dispatch<React.SetStateAction<number>>) {
-    return setInterval(() => {
-        setPoints((prev: number) => prev + 1);
-    }, 100);
 }
 
 
@@ -50,10 +42,10 @@ export function changeSpeed(thorn: HTMLDivElement, points: number): void{
         thorn.style.animationDuration = '1s'
     }
     if(points > 200 && points <= 300){
-        thorn.style.animationDuration = '0.5s'
+        thorn.style.animationDuration = '0.8s'
     }
     if(points > 300){
-        thorn.style.animationDuration = '0.3s'
+        thorn.style.animationDuration = '0.7s'
     }
 }
 
