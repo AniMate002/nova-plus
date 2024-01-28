@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { findSingleNews } from "../../redux/newsReducer";
 import SingleNewsHeader from "../singlenewspage/SingleNewsHeader";
 import SingleNewsContent from "../singlenewspage/SingleNewsContent";
+import SingleNewsSwiper from "../singlenewspage/SingleNewsSwiper";
 
 
 const SingleNewsPage:React.FC = () => {
@@ -11,9 +12,19 @@ const SingleNewsPage:React.FC = () => {
     const dispatch = useAppDispatch()   
     const { singleNews } = useAppSelector(state => state.news)
 
+    function scrollToTop(){
+        document.documentElement.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
+
     useEffect(() => {
         dispatch(findSingleNews(newsId))
     }, [dispatch, newsId])
+    useEffect(() => {
+        scrollToTop()
+    })
 
     return (
         <div className="bg-slate-900 min-h-[100vh]">
@@ -21,6 +32,7 @@ const SingleNewsPage:React.FC = () => {
             <>
                 <SingleNewsHeader {...singleNews}/>
                 <SingleNewsContent {...singleNews}/>
+                <SingleNewsSwiper />
             </>
             :
             <h1 className="text-center pt-40">This article was not found</h1>
