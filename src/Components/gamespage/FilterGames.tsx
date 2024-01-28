@@ -16,7 +16,7 @@ const FilterGames:React.FC = () => {
             sm:text-md
             lg:text-sm
             `}>
-                {tag}{compareTags(tag) ? <i className="fa-solid fa-xmark"></i> : ''}
+                {tag} <i className={`fa-solid fa-${compareTags(tag) ? 'minus' : 'plus'}`}></i>
             </button>
         )
     })

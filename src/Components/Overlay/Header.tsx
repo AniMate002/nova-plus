@@ -9,10 +9,10 @@ const Header:React.FC = () => {
             <header className="main--header z-50 top-[48px] bg-transparent py-0 font-semibold fixed w-[100vw] justify-around text-white uppercase
             hidden
             xl:flex">
-                <div>Nova Plus</div>
+                <Link to={'/'}>Nova Plus</Link>
                 <div className="flex gap-4">
                     <Link to={'/games'}>Games</Link>
-                    <Link to={'/mediaCenter'}>Media Center</Link>
+                    <Link to={'/news'}>News</Link>
                     <Link to={'/career'}>Career</Link>
                     <Link to={'/aboutUs'}>About Us</Link>
                 </div>

@@ -154,3 +154,16 @@ export const closeHeaderSmall = () => {
         
     })
 }
+
+
+export const createNewsTextAnimation = () => {
+    return gsap.timeline({
+        scrollTrigger:{
+            trigger:'.news--sliding--text',
+            scrub: true,
+            start: '110% bottom',
+            end: '250% top',
+
+        }
+    })
+}

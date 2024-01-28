@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit"
-import { allNews } from "./data"
+import { allNews, allUniqueNewsTags } from "./data"
 
 
 export interface newsI {
@@ -9,17 +9,20 @@ export interface newsI {
     title: string,
     subtitle: string, 
     body: string,
-    read:number
+    read:number,
+    tags: Array<string>
 }
 
 export type allNewsType = newsI[]
 
 interface initialStateI {
-    news: allNewsType
+    news: allNewsType,
+    newsTags: Array<string>
 }
 
 const initialState: initialStateI = {
-    news: allNews
+    news: allNews,
+    newsTags: allUniqueNewsTags
 }
 
 

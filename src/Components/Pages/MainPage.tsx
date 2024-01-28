@@ -28,7 +28,8 @@ const MainPage:React.FC = () => {
                 scrub: true,
                 start: '20% center',
                 onEnter: () => {
-                    if(document.documentElement.scrollTop > 100)
+                    if(document.documentElement.scrollTop > 6100)
+                        
                         gsap.to('.all--main--page', { duration: 1.0, backgroundColor: '#6733c8'})
                         // alert(document.documentElement.scrollTop)
                 },
@@ -91,10 +92,7 @@ const MainPage:React.FC = () => {
 
     return (
         <div className="all--main--page min-h-[100vh] overflow-hidden bg-slate-950">
-            <Border />
-            <Header />
-            <HeaderSmallScreens />
-            <HidingHeader />
+
             <ModalSingleCard />
             <div className={`h-[100vh] first--trigger mainImage `}>
                 <BreakThroughLimits />

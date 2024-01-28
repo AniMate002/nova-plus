@@ -198,6 +198,14 @@ font-family: 'Montserrat', sans-serif;
     box-shadow: 0 0 20px #6733c8;
 }
 
+.purple--shadow--xl{
+    box-shadow: 0 0 40px #6733c8;
+}
+
+.teal--shadow--xl{
+    box-shadow: 0 0 40px #0d9488;
+}
+
 
 @keyframes thornMove {
     0%  {

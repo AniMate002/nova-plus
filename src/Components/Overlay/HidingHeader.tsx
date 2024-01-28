@@ -10,7 +10,7 @@ const HidingHeader:React.FC = () => {
             <button onClick={closeHeaderSmall} className="text-white text-[27px]"><i className="fa-solid fa-xmark"></i></button>
             <div className="flex flex-col items-end w-full text-white font-semibold tracking-widest gap-4 text-4xl mt-28">
                 <Link to={'/games'} className="block h-[40px] overflow-hidden"><p className="link--header--small relative top-9">Games</p></Link>
-                <Link to={'/mediaCenter'} className="block sm:h-[40px] text-end vsm:h-[80px] overflow-hidden"><p className="link--header--small relative top-9 ">Media Center</p></Link>
+                <Link to={'/news'} className="block sm:h-[40px] text-end vsm:h-[80px] overflow-hidden"><p className="link--header--small relative top-9 ">News</p></Link>
                 <Link to={'/career'} className="block h-[40px] overflow-hidden"><p className="link--header--small relative top-9">Career</p></Link>
                 <Link to={'/aboutUs'} className="block h-[40px] overflow-hidden"><p className="link--header--small relative top-9">About Us</p></Link>
             </div>

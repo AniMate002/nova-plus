@@ -9,10 +9,6 @@ interface PingBallI {
 
 const PingBall:React.FC<PingBallI> = ({points}) => {
 
-    useEffect(() => {
-       
-    })
-
 
     return (
         <div className="game--container opacity-0 fixed w-[90%] block h-full top-0 left-[50%] translate-x-[-50%] pointer-events-none">
