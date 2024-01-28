@@ -314,6 +314,7 @@ export const allJobs = [job1, job2, job3, job4, job5, job6, job7, job8, job9, jo
 
 
 const news1: newsI = {
+    id: 1,
     date: "oct 01",
     year: 2023,
     read: 2,
@@ -325,6 +326,7 @@ const news1: newsI = {
 };
 
 const news2: newsI = {
+    id: 2,
     date: "june 10",
     year: 2024,
     read: 3,
@@ -336,6 +338,7 @@ const news2: newsI = {
 };
 
 const news3: newsI = {
+    id: 3,
     date: "june 14",
     year: 2024,
     read: 5,
@@ -347,6 +350,7 @@ const news3: newsI = {
 };
 
 const news4: newsI = {
+    id: 4,
     date: "febr 09",
     year: 2024,
     read: 2,
@@ -358,6 +362,7 @@ const news4: newsI = {
 };
 
 const news5: newsI = {
+    id: 5,
     date: "febr 23",
     year: 2024,
     read: 2,
@@ -369,6 +374,7 @@ const news5: newsI = {
 };
 
 const news6: newsI = {
+    id: 6,
     date: "march 17",
     year: 2024,
     read: 4,
@@ -380,6 +386,7 @@ const news6: newsI = {
 };
 
 const news7: newsI = {
+    id: 7,
     date: "march 30",
     year: 2024,
     read: 5,
@@ -391,6 +398,7 @@ const news7: newsI = {
 };
 
 const news8: newsI = {
+    id: 8,
     date: "apr 03",
     year: 2024,
     read: 6,
@@ -402,6 +410,7 @@ const news8: newsI = {
 };
 
 const news9: newsI = {
+    id: 9,
     date: "apr 20",
     year: 2024,
     read: 1,
@@ -413,6 +422,7 @@ const news9: newsI = {
 };
 
 const news10: newsI = {
+    id: 10,
     date: "may 08",
     year: 2024,
     read: 3,
@@ -423,6 +433,6 @@ const news10: newsI = {
     tags: ["In-Game Events", "Festive Celebrations", "New Year"]
 };
 
-export const allUniqueNewsTags:Array<string> = ["Game Engine","Innovation","Developer Tools","Game Developers Conference","Collaboration","eSports","Championship","Gaming Community","Game Teaser","Upcoming Title","Adventure","Community Event","Celebration","New Hires","Team Expansion","Game Development",]
+export const allUniqueNewsTags:Array<string> = ["Game Engine","New Year","Player Suggestions","Game Developers Conference","Enhancements","Innovation","Festive Celebrations","Gaming Community","Game Teaser","Upcoming Title","Adventure","Community Event","Celebration","New Hires","Team Expansion","Game Development",]
 
 export const allNews: allNewsType = [news1, news2, news3, news4, news5, news6, news7, news8, news9, news10]

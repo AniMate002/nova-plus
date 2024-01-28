@@ -14,6 +14,7 @@ import 'swiper/css/autoplay'
 import MainPage from './Components/Pages/MainPage';
 import GamesPage from './Components/Pages/GamesPage';
 import NewsPage from './Components/Pages/NewsPage';
+import SingleNewsPage from './Components/Pages/SingleNewsPage';
 
 
 const root = ReactDOM.createRoot(
@@ -32,6 +33,9 @@ const router = createBrowserRouter([
       {
         path: '/news',
         element: <NewsPage />
+      },{
+        path: '/news/:newsId',
+        element: <SingleNewsPage />
       }
     ]
   },

@@ -1,9 +1,11 @@
-import { useState } from "react";
-import { useAppSelector } from "../../redux/hook";
+import { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "../../redux/hook";
+import { clearNewsFilter, filterNews } from "../../redux/newsReducer";
 
 const NewsTags: React.FC = () => {
     const { newsTags } = useAppSelector((state) => state.news);
-    const [activeTag, setActiveTag] = useState<string | undefined>();
+    const [activeTag, setActiveTag] = useState<string | undefined>(undefined);
+    const dispatch = useAppDispatch()
     
     const compareTags = (tag: string): boolean => activeTag === tag;
 
@@ -17,10 +19,19 @@ const NewsTags: React.FC = () => {
         </button>
     ));
 
+
+    useEffect(() => {
+        if(activeTag){
+            dispatch(filterNews(activeTag))
+        }else{
+            dispatch(clearNewsFilter())
+        }
+    }, [activeTag])
+
     return (
         <div className="w-[60%] flex tracking-widest mx-auto justify-between pb-20 mt-40">
             <p className="uppercase text-white w-[20%]">tags</p>
-            <div className="w-[80%] flex flex-wrap">{renderedTags}</div>
+            <div className="w-[80%] flex flex-wrap gap-2">{renderedTags}</div>
         </div>
     );
 };

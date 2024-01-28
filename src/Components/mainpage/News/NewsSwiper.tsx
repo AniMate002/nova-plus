@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { useAppSelector } from '../../../redux/hook';
+import { Link } from 'react-router-dom';
 
 
 
@@ -7,7 +8,7 @@ const NewsSwiper:React.FC = () => {
     const { news } = useAppSelector(state => state.news)
 
     const rendreredSliders = news.map((item, index) => <SwiperSlide key={item.title}>
-        <div className={`news--trigger--${index}  pb-2 opacity-0
+        <Link to={`/news/${item.id}`} className={`news--trigger--${index} block  pb-2 opacity-0
         w-[110px]
         min-[410px]:w-[150px]
         min-[513px]:w-[180px]
@@ -30,11 +31,11 @@ const NewsSwiper:React.FC = () => {
             w-full text-base pt-2
             lg:w-[70%] lg:text-5xl lg:pt-10
             '>{item.title}</p>
-        </div>
+        </Link>
     </SwiperSlide>)
     
     return (
-        <Swiper slidesPerView={2.1} freeMode={{sticky: false}}  speed={1500}>
+        <Swiper slidesPerView={2.1} freeMode={{sticky: false}}  speed={1500} loop={true}> 
             {rendreredSliders}
         </Swiper>
     );
