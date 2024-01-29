@@ -13,7 +13,7 @@ const SingleNewsHeader:React.FC<SingleNewsHeaderI> = ({title, tags, year, date})
     xl:w-[50px] xl:h-[50px]
     `}></Link>
     return (
-        <div className="mx-auto bg-slate-900 flex justify-between pb-48
+        <div className="mx-auto  flex justify-between pb-48
         w-[90%] flex-col pt-28
         md:w-[50%] md:pt-40
         lg:flex-row

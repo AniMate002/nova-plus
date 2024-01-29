@@ -91,7 +91,7 @@ const MainPage:React.FC = () => {
 
 
     return (
-        <div className="all--main--page min-h-[100vh] overflow-hidden bg-slate-950">
+        <div className="all--main--page min-h-[100vh] overflow-hidden bg-gradient-to-tr from-violet-950 to-slate-950">
 
             <ModalSingleCard />
             <div className={`h-[100vh] first--trigger mainImage `}>

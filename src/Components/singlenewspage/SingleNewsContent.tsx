@@ -4,7 +4,7 @@ interface SingleNewsContentI extends newsI {}
 
 const SingleNewsContent:React.FC<SingleNewsContentI> = ({images, body, read, subtitle, year, date}) => {
     return (
-        <div className=" mx-auto rounded-xl bg-slate-800 relative min-h-[70vh] text-slate-400
+        <div className=" shadow-slate-800 mx-auto rounded-xl bg-gradient-to-bl from-slate-700 to-slate-900 relative min-h-[70vh] text-slate-400
         w-full pb-20
         md:w-[60%] md:pb-40
         ">
