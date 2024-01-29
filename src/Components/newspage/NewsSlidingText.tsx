@@ -14,7 +14,10 @@ const NewsSlidingText:React.FC = () => {
     })
 
     return (
-        <p className="news--sliding--text Haptik text-[300px] text-white font-bold mt-20 left-[50%] relative">news</p>
+        <p className="news--sliding--text Haptik text-white font-bold mt-20 left-[50%] relative
+        text-[200px]
+        md:text-[300px]
+        ">news</p>
     );
 }
  

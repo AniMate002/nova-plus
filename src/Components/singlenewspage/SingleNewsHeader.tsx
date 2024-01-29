@@ -21,10 +21,6 @@ const SingleNewsHeader:React.FC<SingleNewsHeaderI> = ({title, tags, year, date})
                     {renderSocialNetworkIcon('fa-brands fa-github', 'https://github.com/AniMate002')}
                     {renderSocialNetworkIcon('fa-brands fa-linkedin-in', 'https://www.linkedin.com/in/kirill-shauchenka-356802296/')}
                 </div>
-                <div className="flex w-full justify-between text-white absolute bottom-0">
-                    <p className="Haptik font-semibold">{date}</p>
-                    <p className="Haptik font-semibold">{year}</p>
-                </div>
             </div>
         </div>
     );

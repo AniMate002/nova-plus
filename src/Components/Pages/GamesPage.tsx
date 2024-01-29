@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AllGames from "../gamespage/AllGames";
 import FilterGames from "../gamespage/FilterGames";
 import GamesSwiper from "../gamespage/GamesSwiper";
@@ -6,7 +7,9 @@ import GamesSwiper from "../gamespage/GamesSwiper";
 const GamesPage:React.FC = () => {
     return (
         <div className="bg-slate-950 min-h-[100vh] overflow-x-hidden">
-            <header className="w-full uppercase text-white font-bold text-center py-20 text-5xl">nova plus</header>            
+            <header className="w-full uppercase text-white font-bold text-center py-20 text-5xl">
+                <Link to={'/'}>nova plus</Link>
+            </header>            
             <GamesSwiper />
             <FilterGames />
             <AllGames />
