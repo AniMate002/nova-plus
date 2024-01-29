@@ -36,7 +36,7 @@ const SingleNewsSwiper:React.FC = () => {
         )
     })
     return (
-        <div className='bg-slate-900 text-white py-20 select-none'>
+        <div className='bg-slate-900 text-white py-20 select-none max-w-[1800px] mx-auto'>
             <Swiper slidesPerView={2.8} spaceBetween={60} centeredSlides={true} initialSlide={2} loop={true}>
                 {renderedSlides}
             </Swiper>

@@ -27,7 +27,7 @@ const SingleNewsPage:React.FC = () => {
     })
 
     return (
-        <div className="bg-slate-900 min-h-[100vh]">
+        <div className="bg-slate-900 min-h-[100vh] overflow-x-hidden">
             {singleNews ? 
             <>
                 <SingleNewsHeader {...singleNews}/>

@@ -4,15 +4,37 @@ interface SingleNewsContentI extends newsI {}
 
 const SingleNewsContent:React.FC<SingleNewsContentI> = ({images, body, read, subtitle, year, date}) => {
     return (
-        <div className="w-[60%] mx-auto rounded-xl bg-slate-800 relative min-h-[70vh]  pb-40 text-slate-400">
-            <img src={images[0]} alt={images[0]} className="absolute left-[50%] translate-x-[-50%] top-[-100px] h-[500px] mx-auto rounded-lg"/>
-            <div className=" mx-auto pt-[400px] p-10">
-                <div className="px-10 flex justify-between text-white">
-                    <p className="Haptik mt-10 text-xl">{date}</p>
-                    <p className="Haptik mt-10 text-xl">{year}</p>
-                    <p className="Haptik mt-10 text-xl">~{read}min read</p>
+        <div className=" mx-auto rounded-xl bg-slate-800 relative min-h-[70vh] text-slate-400
+        w-full pb-20
+        md:w-[60%] md:pb-40
+        ">
+            <img src={images[0]} alt={images[0]} className="absolute left-[50%] translate-x-[-50%] top-[-100px] mx-auto rounded-lg
+            h-auto w-full
+            xl:h-[500px] xl:w-auto
+            "/>
+            <div className=" mx-auto p-10
+            pt-[80px]
+            min-[380px]:pt-[110px]
+            min-[440px]:pt-[160px]
+            min-[515px]:pt-[250px]
+            min-[670px]:pt-[280px]
+            min-[984px]:pt-[250px]
+            min-[1130px]:pt-[280px]
+            sm:pt-[250px]
+            xl:pt-[400px]
+            ">
+                <div className="px-10 flex justify-between text-white flex-wrap mt-10 
+                text-sm
+                md:text-xl
+                ">
+                    <p className="Haptik">{date}</p>
+                    <p className="Haptik">{year}</p>
+                    <p className="Haptik">~{read}min read</p>
                 </div>
-                <p className="mt-14">{body}</p>
+                <p className="mt-14 text-justify
+                text-sm
+                md:text-base
+                ">{body}</p>
                 <h4 className="text-center text-2xl mt-10 Haptik font-bold">{subtitle}</h4>
             </div>
         </div>
