@@ -15,6 +15,8 @@ import MainPage from './Components/Pages/MainPage';
 import GamesPage from './Components/Pages/GamesPage';
 import NewsPage from './Components/Pages/NewsPage';
 import SingleNewsPage from './Components/Pages/SingleNewsPage';
+import AboutUsPage from './Components/Pages/AboutUsPage';
+import PageNotFound from './Components/Pages/PageNotFound';
 
 
 const root = ReactDOM.createRoot(
@@ -33,9 +35,18 @@ const router = createBrowserRouter([
       {
         path: '/news',
         element: <NewsPage />
-      },{
+      },
+      {
         path: '/news/:newsId',
         element: <SingleNewsPage />
+      },
+      {
+        path: '/aboutUs',
+        element: <AboutUsPage />
+      },
+      {
+        path: '*',
+        element: <PageNotFound />
       }
     ]
   },
