@@ -3,13 +3,15 @@ import gamesReducer from './gamesReducer'
 import worldMapReducer from './worldMapReducer'
 import jobsReducer from './jobsReducer'
 import newsReducer from './newsReducer'
+import teamReducer from './teamReducer'
 
 export const store = configureStore({
   reducer: {
     games: gamesReducer,
     worldMap: worldMapReducer,
     jobs: jobsReducer,
-    news: newsReducer
+    news: newsReducer,
+    team: teamReducer
   },
 })
 

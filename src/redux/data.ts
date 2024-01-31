@@ -29,6 +29,15 @@ import news7_1 from '../images/news/news7_1.jpg'
 import news8_1 from '../images/news/news8_1.jpg'
 import news9_1 from '../images/news/news9_1.jpg'
 import news10_1 from '../images/news/news10_1.png'
+import { teamType } from "./teamReducer";
+
+import avatar1 from '../images/avatars/avatar1.jpg'
+import avatar2 from '../images/avatars/avatar2.jpg'
+import avatar3 from '../images/avatars/avatar3.jpg'
+import avatar4 from '../images/avatars/avatar4.jpg'
+import { sponsorsType } from "./sponsorsReducer";
+
+
 
 
 const pc = 'fa-solid fa-desktop'
@@ -436,3 +445,34 @@ const news10: newsI = {
 export const allUniqueNewsTags:Array<string> = ["Game Engine","New Year","Player Suggestions","Game Developers Conference","Enhancements","Innovation","Festive Celebrations","Gaming Community","Game Teaser","Upcoming Title","Adventure","Community Event","Celebration","New Hires","Team Expansion","Game Development",]
 
 export const allNews: allNewsType = [news1, news2, news3, news4, news5, news6, news7, news8, news9, news10]
+
+
+
+export const wholeTeam: teamType = [
+    { id: 1, name: "Alice Smith", position: "Lead Developer", image:avatar1 },
+    { id: 2, name: "Bob Johnson", position: "UI/UX Designer", image:avatar2 },
+    { id: 3, name: "Charlie Williams", position: "Backend Developer", image:avatar3 },
+    { id: 4, name: "Diana Brown", position: "QA Tester", image:avatar4 },
+];
+
+
+
+
+
+export const allSponsors: sponsorsType = [
+    { id: 1, name: "TechCo", image: "techco_logo.png" },
+    { id: 2, name: "Microsoft", image: "innocorp_logo.png" },
+    { id: 3, name: "FutureTech", image: "futuretech_logo.png" },
+    { id: 4, name: "DigitalDynamics", image: "digitaldynamics_logo.png" },
+    { id: 5, name: "MegaSolutions", image: "megasolutions_logo.png" },
+    { id: 6, name: "GlobalTech", image: "globaltech_logo.png" },
+    { id: 7, name: "Facebook", image: "innovatex_logo.png" },
+    { id: 8, name: "Apple", image: "stellartech_logo.png" },
+    { id: 9, name: "StarSolutions", image: "starsolutions_logo.png" },
+    { id: 10, name: "Unity", image: "cosmicinnovations_logo.png" },
+    { id: 11, name: "Adobe", image: "nebulatech_logo.png" },
+    { id: 12, name: "Amazon", image: "futuristx_logo.png" },
+    { id: 13, name: "Netflix", image: "celestialcorp_logo.png" },
+    { id: 14, name: "QuantumTech", image: "quantumtech_logo.png" },
+    { id: 15, name: "Cisco", image: "innovateglobally_logo.png" },
+  ];

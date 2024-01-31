@@ -1,6 +1,8 @@
 import AboutUsExperience from "../aboutuspage/AboutUsExperience";
 import AboutUsGames from "../aboutuspage/AboutUsGames";
 import AboutUsHeader from "../aboutuspage/AboutUsHeader";
+import AboutUsSponsors from "../aboutuspage/AboutUsSponsors";
+import AboutUsTeam from "../aboutuspage/AboutUsTeam";
 
 
 
@@ -10,6 +12,8 @@ const AboutUsPage:React.FC = () => {
             <AboutUsHeader />
             <AboutUsGames />
             <AboutUsExperience />
+            <AboutUsTeam />
+            <AboutUsSponsors />
         </div>
     );
 }
