@@ -41,7 +41,7 @@ const AboutUsHeader:React.FC = () => {
     }, [])
 
     return (
-        <div>
+        <div className="min-h-[100vh]">
             <div className="flex w-[70%] justify-between mx-auto pt-10">
                 <div className="pt-40 text-white text-center flex items-center gap-4 font-bold uppercase">
                     <h3 className="min-w-[120px] text-[100px]">{projects}</h3>

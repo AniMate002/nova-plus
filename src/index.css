@@ -197,6 +197,9 @@ font-family: 'Montserrat', sans-serif;
 .purple--shadow{
     box-shadow: 0 0 20px #6733c8;
 }
+.purple--text--shadow{
+    text-shadow: 0 0 20px #6733c8;
+}
 
 .purple--shadow--xl{
     box-shadow: 0 0 40px #6733c8;
@@ -249,3 +252,22 @@ font-family: 'Montserrat', sans-serif;
 .start--jump {
     animation: cubeJump 0.4s linear;
 }
+
+
+.black--shadow--bottom{
+    box-shadow: 0 10px 30px #020617;
+}
+
+
+
+.circle {
+    display: block;
+    overflow: visible;
+    width: 100px;
+    font-size: 28px;
+    fill: red;
+  }
+  
+  .circle path {
+      fill: none;
+  }
