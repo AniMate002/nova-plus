@@ -266,8 +266,13 @@ font-family: 'Montserrat', sans-serif;
     width: 100px;
     font-size: 28px;
     fill: red;
-  }
-  
-  .circle path {
-      fill: none;
-  }
+}
+
+.circle path {
+    fill: none;
+}
+
+
+.about--us--header{
+    background-image: url(../src/images/sponsors/aboutUsBg2.jpg);
+}

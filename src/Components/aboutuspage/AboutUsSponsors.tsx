@@ -10,7 +10,7 @@ const AboutUsSponsors:React.FC = () => {
                     <img src={bgSponsors} alt={bgSponsors} className='h-full'/>
                     <h2 className="text-white uppercase text-7xl font-bold py-20 tracking-widest absolute left-1/2 bottom-0 translate-x-[-50%]">our sponsors</h2>
                 </div>
-                <div className='w-[50%] bg-slate-800 flex flex-col justify-around rounded-r-2xl'>
+                <div className='w-[50%] bg-gradient-to-br from-slate-800 to-slate-900 flex flex-col justify-around rounded-r-2xl'>
                     <SponsorsSwiper key={111} start={0} end={4} title={"Gold sponsors"}/>
                     <SponsorsSwiper key={222} start={4} end={10} title={"Silver sponsors"}/>
                     <SponsorsSwiper key={333} start={10} end={16} title={"Bronze sponsors"}/>
