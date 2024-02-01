@@ -37,6 +37,23 @@ import avatar3 from '../images/avatars/avatar3.jpg'
 import avatar4 from '../images/avatars/avatar4.jpg'
 import { sponsorsType } from "./sponsorsReducer";
 
+import adobe from '../images/sponsors/adobe.png'
+import amazon from '../images/sponsors/amazon.png'
+import apple from '../images/sponsors/apple.png'
+import cisco from '../images/sponsors/cisco.png'
+import digitalDinamics from '../images/sponsors/digitalDinamics.png'
+import facebook from '../images/sponsors/facebook.png'
+import futureTech from '../images/sponsors/futureTech.png'
+import globalTech from '../images/sponsors/globalTech.png'
+import megaSolutions from '../images/sponsors/megaSolutions.png'
+import microsoft from '../images/sponsors/microsoft.png'
+import quantumTech from '../images/sponsors/quantumTech.png'
+import startSolutions from '../images/sponsors/startSolutions.png'
+import techco from '../images/sponsors/techco.png'
+import unity from '../images/sponsors/unity.png'
+import netflix from '../images/sponsors/netflix.jpg'
+
+
 
 
 
@@ -460,19 +477,19 @@ export const wholeTeam: teamType = [
 
 
 export const allSponsors: sponsorsType = [
-    { id: 1, name: "TechCo", image: "techco_logo.png" },
-    { id: 2, name: "Microsoft", image: "innocorp_logo.png" },
-    { id: 3, name: "FutureTech", image: "futuretech_logo.png" },
-    { id: 4, name: "DigitalDynamics", image: "digitaldynamics_logo.png" },
-    { id: 5, name: "MegaSolutions", image: "megasolutions_logo.png" },
-    { id: 6, name: "GlobalTech", image: "globaltech_logo.png" },
-    { id: 7, name: "Facebook", image: "innovatex_logo.png" },
-    { id: 8, name: "Apple", image: "stellartech_logo.png" },
-    { id: 9, name: "StarSolutions", image: "starsolutions_logo.png" },
-    { id: 10, name: "Unity", image: "cosmicinnovations_logo.png" },
-    { id: 11, name: "Adobe", image: "nebulatech_logo.png" },
-    { id: 12, name: "Amazon", image: "futuristx_logo.png" },
-    { id: 13, name: "Netflix", image: "celestialcorp_logo.png" },
-    { id: 14, name: "QuantumTech", image: "quantumtech_logo.png" },
-    { id: 15, name: "Cisco", image: "innovateglobally_logo.png" },
+    { id: 1, name: "TechCo", image: techco },
+    { id: 2, name: "Microsoft", image: microsoft },
+    { id: 3, name: "FutureTech", image: futureTech },
+    { id: 4, name: "DigitalDynamics", image: digitalDinamics },
+    { id: 5, name: "MegaSolutions", image: megaSolutions },
+    { id: 6, name: "GlobalTech", image: globalTech },
+    { id: 7, name: "Facebook", image: facebook },
+    { id: 8, name: "Apple", image: apple },
+    { id: 9, name: "StarSolutions", image: startSolutions },
+    { id: 10, name: "Unity", image: unity },
+    { id: 11, name: "Adobe", image: adobe },
+    { id: 12, name: "Amazon", image: amazon },
+    { id: 13, name: "Netflix", image: netflix },
+    { id: 14, name: "QuantumTech", image: quantumTech },
+    { id: 15, name: "Cisco", image: cisco },
   ];

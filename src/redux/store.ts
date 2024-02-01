@@ -4,6 +4,7 @@ import worldMapReducer from './worldMapReducer'
 import jobsReducer from './jobsReducer'
 import newsReducer from './newsReducer'
 import teamReducer from './teamReducer'
+import sponsorsReducer from './sponsorsReducer'
 
 export const store = configureStore({
   reducer: {
@@ -11,7 +12,8 @@ export const store = configureStore({
     worldMap: worldMapReducer,
     jobs: jobsReducer,
     news: newsReducer,
-    team: teamReducer
+    team: teamReducer,
+    sponsors: sponsorsReducer
   },
 })
 

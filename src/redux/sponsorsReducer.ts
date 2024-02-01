@@ -17,9 +17,10 @@ const initialState: initialStateI = {
     sponsors: allSponsors
 }
 
-
 const sponsorsSlice = createSlice({
     name: 'sponsors',
     initialState,
     reducers:{}
 })
+
+export default sponsorsSlice.reducer
