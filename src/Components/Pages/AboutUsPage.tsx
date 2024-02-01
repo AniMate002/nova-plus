@@ -8,7 +8,7 @@ import AboutUsTeam from "../aboutuspage/AboutUsTeam";
 
 const AboutUsPage:React.FC = () => {
     return (
-        <div className="min-h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900">
+        <div className="min-h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900 overflow-x-hidden">
             <AboutUsHeader />
             <AboutUsGames />
             <AboutUsExperience />

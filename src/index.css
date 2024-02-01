@@ -275,4 +275,6 @@ font-family: 'Montserrat', sans-serif;
 
 .about--us--header{
     background-image: url(../src/images/sponsors/aboutUsBg2.jpg);
+    background-position: center;
+    background-size: cover;
 }
