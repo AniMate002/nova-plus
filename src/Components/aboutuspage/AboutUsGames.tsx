@@ -9,7 +9,7 @@ const AboutUsGames:React.FC = () => {
         lg:flex-row
         ">
             <div className="
-            w-[70%]
+            w-[80%]
             lg:w-[40%]
             xl:w-[30%]
             ">
@@ -27,7 +27,7 @@ const AboutUsGames:React.FC = () => {
                 </p>
             </div>
             <div className="
-            w-[70%]
+            w-[100%]
             md:w-[70%]
             lg:w-[50%]
             ">
