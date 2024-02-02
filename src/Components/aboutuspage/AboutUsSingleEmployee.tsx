@@ -8,8 +8,11 @@ interface AboutUsSingleEmployeeI extends emploeeI {
 const AboutUsSingleEmployee:React.FC<AboutUsSingleEmployeeI> = ({ image, name, position }) => {
     return (
         <div>
-            <div className="h-[300px] w-[300px] overflow-hidden flex justify-center items-center rounded-xl hover:outline hover:outline-4 outline-offset-4 outline-violet-700 transition-all">
-                <img src={image} alt={image} className="min-w-[450px] min-h-max flex-shrink-0"/>
+            <div className="overflow-hidden flex justify-center items-center rounded-full hover:outline hover:outline-4 outline-offset-4 outline-violet-700 transition-all
+            h-[200px] w-[200px]
+            lg:h-[300px] lg:w-[300px]
+            ">
+                <img src={image} alt={image} className="min-w-[420px] min-h-max flex-shrink-0"/>
             </div>
             <div className="text-center mt-6">
                 <h4 className="text-white text-xl Haptik">{name}</h4>
