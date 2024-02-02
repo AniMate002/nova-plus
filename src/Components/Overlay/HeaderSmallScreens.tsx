@@ -12,8 +12,7 @@ const HeaderSmallScreens:React.FC = () => {
         xl:hidden">
             <button onClick={showHeaderSmall} className="text-white text-[27px] ml-[10px] mt-[10px] select-none">
                 <i className="fa-solid fa-bars"></i>
-            </button>
-           
+            </button> 
         </div>
     );
 }

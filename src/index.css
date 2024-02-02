@@ -278,3 +278,10 @@ font-family: 'Montserrat', sans-serif;
     background-position: center;
     background-size: cover;
 }
+
+
+.career--header{
+    background-image: url(./images/career/careerBg.jpg);
+    background-position: center;
+    background-size: cover;
+}

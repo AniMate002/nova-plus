@@ -16,7 +16,7 @@ import ParisImage from '../images/cities/Paris.jpg'
 import BerlinImage from '../images/cities/Berlin.jpg'
 import WashingtonImage from '../images/cities/Washington.jpg'
 import LasVegasImage from '../images/cities/LasVegas.jpg'
-import { jobI } from "./jobsReducer";
+import { benefitsType, jobI, stagesType } from "./jobsReducer";
 import { allNewsType, newsI } from "./newsReducer";
 
 import news1_1 from '../images/news/news1_1.png'
@@ -331,6 +331,36 @@ const job10: jobI = {
 };
 
 export const allJobs = [job1, job2, job3, job4, job5, job6, job7, job8, job9, job10]
+export const allJobsLocation = ['Poland', 'USA', 'UK', 'Germany', 'Japan', 'Australia', 'Canada', 'India', 'South Africa']
+
+export const allStages: stagesType = [
+    {
+        id: 1,
+        title: 'Initial Screening',
+        description: 'Your application will undergo a thorough evaluation by our experienced development team. If your qualifications align with the key requirements for the role, expect to hear from our Recruiters shortly! Explore our current career opportunities here.',
+    },
+    {
+        id: 2,
+        title: 'Initial Conversation',
+        description: 'Embark on the first phase of our recruitment process with a discussion led by our dedicated recruitment team. Gain in-depth insights into NovaPlus and the specific role you\'re applying for. This interaction also provides us with the opportunity to delve into your professional profile.',
+    },
+    {
+        id: 3,
+        title: 'Skills Demonstration',
+        description: 'Progressing further, you\'ll be invited to demonstrate your skills in a more practical setting. This stage often involves a tailored test assignment, allowing us to witness your abilities in action and evaluate your aptitude for the role.',
+    },
+    {
+        id: 4,
+        title: 'Developer Interaction',
+        description: 'For those who successfully navigate the skills assessment, the subsequent step involves direct interaction with our development team. This session delves deeper into your test results and professional experiences, providing a thorough understanding of your potential role at NovaPlus.',
+    },
+    {
+        id: 5,
+        title: 'Final Discussion and Decision',
+        description: 'Congratulations on reaching the final stage of our recruitment process! In this phase, you\'ll engage in a conclusive discussion with our HR team. Cover any remaining topics, address additional queries, and collectively decide if a collaborative journey with NovaPlus is the next step. If the answer is affirmative, an offer will be extended, marking the beginning of your exciting journey with the NovaPlus family!',
+    },
+];
+  
 
 
 
@@ -493,3 +523,20 @@ export const allSponsors: sponsorsType = [
     { id: 14, name: "QuantumTech", image: quantumTech },
     { id: 15, name: "Cisco", image: cisco },
   ];
+
+
+
+
+export const allBenefits: benefitsType = [
+    { icon: 'fa-solid fa-rocket', title: 'Innovation Hub', description: 'NovaPlus provides a dynamic and creative workspace where innovation is not just encouraged but celebrated. Team members have the opportunity to work on cutting-edge projects that redefine the gaming industry.' },
+    { icon: 'fa-solid fa-earth-americas', title: 'Global Reach', description: 'Join a team that creates games with a global impact. NovaPlus\'s work reaches audiences around the world, allowing employees to contribute to the immersive experiences of players across diverse cultures.' },
+    { icon: 'fa-solid fa-rainbow', title: 'Inclusive Culture', description: 'NovaPlus fosters an inclusive culture where diversity is valued. Team members experience an environment that embraces different perspectives, creating a workplace that is both supportive and enriching.' },
+    { icon: 'fa-solid fa-book', title: 'Continuous Learning', description: 'NovaPlus invests in the professional growth of its employees. Access to workshops, training programs, and industry events ensures that team members stay at the forefront of the rapidly evolving gaming landscape.' },
+    { icon: 'fa-solid fa-hand-spock', title: 'Talent Recognition', description: 'Exceptional talent is recognized and celebrated at NovaPlus. Outstanding contributions are acknowledged, creating a culture where each team member\'s unique skills are valued and appreciated.' },
+    { icon: 'fa-regular fa-handshake', title: 'Collaborative Dynamics', description: 'NovaPlus thrives on collaboration. Team members work seamlessly together, combining diverse skill sets to tackle challenges and create games that push the boundaries of interactive entertainment.' },
+    { icon: 'fa-solid fa-scale-balanced', title: 'Work-Life Balance', description: 'NovaPlus understands the importance of work-life balance. Flexible work schedules and a supportive environment enable employees to maintain a healthy equilibrium between professional and personal life.' },
+    { icon: 'fa-solid fa-wand-magic-sparkles', title: 'Networking Opportunities', description: 'Working at NovaPlus opens doors to a vast network of industry professionals. Employees have opportunities to connect, collaborate, and build relationships with experts and peers in the gaming community.' },
+    { icon: 'fa-regular fa-lightbulb', title: 'Creative Freedom', description: 'NovaPlus empowers its team with creative freedom. Team members have the autonomy to explore innovative ideas, contributing to the development of games that stand out for their originality and creativity.' },
+    { icon: 'fa-solid fa-coins', title: 'Recognition and Rewards', description: 'NovaPlus values and rewards achievements. Whether it\'s hitting project milestones or personal accomplishments, employees enjoy recognition and rewards that highlight their contributions to the company\'s success.' },
+];
+  

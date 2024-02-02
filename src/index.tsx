@@ -11,12 +11,14 @@ import { store } from './redux/store';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/autoplay'
+import 'swiper/css/effect-cards';
 import MainPage from './Components/Pages/MainPage';
 import GamesPage from './Components/Pages/GamesPage';
 import NewsPage from './Components/Pages/NewsPage';
 import SingleNewsPage from './Components/Pages/SingleNewsPage';
 import AboutUsPage from './Components/Pages/AboutUsPage';
 import PageNotFound from './Components/Pages/PageNotFound';
+import CareerPage from './Components/Pages/CareerPage';
 
 
 const root = ReactDOM.createRoot(
@@ -43,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/aboutUs',
         element: <AboutUsPage />
+      },
+      {
+        path: '/career',
+        element: <CareerPage />
       },
       {
         path: '*',
