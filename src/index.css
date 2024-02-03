@@ -273,15 +273,20 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
-.about--us--header{
+/* .about--us--header{
     background-image: url(../src/images/sponsors/aboutUsBg2.jpg);
     background-position: center;
     background-size: cover;
-}
+} */
 
 
-.career--header{
+/* .career--header{
     background-image: url(./images/career/careerBg.jpg);
     background-position: center;
     background-size: cover;
+} */
+
+
+a.active{
+    color: #c4b5fd;
 }

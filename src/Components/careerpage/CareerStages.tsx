@@ -20,7 +20,7 @@ const CareerStages:React.FC = () => {
     })
     return (
         <div className="py-20 text-white">
-            <h2 className="text-center uppercase text-7xl">Get in</h2>
+            <h2 className="text-center uppercase font-bold  text-[150px]">Get in</h2>
             <h5 className="text-center text-xl uppercase">in 5 steps</h5>
             <div className="h-[2px] w-[20%] mx-auto bg-violet-800 mt-10"></div>
             <div className="w-full mt-10">

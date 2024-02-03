@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import GoUpButton from "./GoUpButtom";
 import SocialNetworks from "./SocialNetworks";
 
@@ -11,10 +11,10 @@ const Header:React.FC = () => {
             xl:flex">
                 <Link to={'/'}>Nova Plus</Link>
                 <div className="flex gap-4">
-                    <Link to={'/games'}>Games</Link>
-                    <Link to={'/news'}>News</Link>
-                    <Link to={'/career'}>Career</Link>
-                    <Link to={'/aboutUs'}>About Us</Link>
+                    <NavLink to={'/games'}>Games</NavLink>
+                    <NavLink to={'/news'}>News</NavLink>
+                    <NavLink to={'/career'}>Career</NavLink>
+                    <NavLink to={'/aboutUs'}>About Us</NavLink>
                 </div>
             </header>
 

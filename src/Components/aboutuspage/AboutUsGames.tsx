@@ -6,7 +6,7 @@ const AboutUsGames:React.FC = () => {
     return (
         <div className="flex py-20 justify-around w-[95%] mx-auto items-center min-h-[100vh] max-w-[1600px]
         flex-col
-        lg:flex-row
+        lg:hidden
         ">
             <div className="
             w-[80%]

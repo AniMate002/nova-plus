@@ -16,7 +16,7 @@ const CareerJobsList:React.FC = () => {
                         </div>
                         <button className="bg-violet-700 text-white px-8 py-0 rounded-full text-[12px] hover:bg-violet-800 transition-all">Apply now</button>
                     </div>
-                    <div className="h-[2px] w-full bg-slate-800"></div>
+                    <div className="h-[1px] w-full bg-slate-700"></div>
                 </div>
             )
         })
