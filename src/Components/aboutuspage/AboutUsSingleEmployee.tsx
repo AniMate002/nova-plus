@@ -12,7 +12,7 @@ const AboutUsSingleEmployee:React.FC<AboutUsSingleEmployeeI> = ({ image, name, p
             h-[200px] w-[200px]
             lg:h-[300px] lg:w-[300px]
             ">
-                <img src={image} alt={image} className="min-w-[420px] min-h-max flex-shrink-0"/>
+                <img src={image} alt={image} className="min-w-[200px] mt-20 min-h-max flex-shrink-0"/>
             </div>
             <div className="text-center mt-6">
                 <h4 className="text-white text-xl Haptik">{name}</h4>
