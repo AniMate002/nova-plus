@@ -32,7 +32,7 @@ const NewsTags: React.FC = () => {
     }, [activeTag])
 
     return (
-        <div className="w-[60%] flex tracking-widest mx-auto justify-between pb-20 mt-40
+        <div className="w-[80%] flex tracking-widest mx-auto justify-between pb-20 mt-40
         flex-col text-center gap-10
         md:flex-row md:text-left md:gap-0
         ">

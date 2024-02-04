@@ -8,10 +8,22 @@ import meeting3 from '../../images/career/meeting3.jpg'
 
 const CareerMeetings:React.FC = () => {
     return (
-        <div className="py-20 flex w-full justify-between">
-            <img src={meeting1} alt={meeting1} className='w-[34%]' />
-            <img src={meeting2} alt={meeting2} className='w-[34%]' />
-            <img src={meeting3} alt={meeting3} className='w-[34%]' />
+        <div className="py-20 flex w-full justify-between
+        flex-col
+        md:flex-row
+        ">
+            <img src={meeting1} alt={meeting1} className='
+            w-full
+            md:w-[34%]
+            ' />
+            <img src={meeting2} alt={meeting2} className='
+            w-full
+            md:w-[34%]
+            ' />
+            <img src={meeting3} alt={meeting3} className='
+            w-full
+            md:w-[34%]
+            ' />
         </div>
     );
 }

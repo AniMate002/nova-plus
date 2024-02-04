@@ -18,7 +18,10 @@ const CareerJobsFilter:React.FC = () => {
     }
 
     return (
-        <div className="w-[20%] text-slate-500 flex flex-col gap-6 items-end">
+        <div className="w-[20%] text-slate-500  flex-col gap-6 items-end
+        hidden
+        lg:flex
+        ">
             <h4 className="font-bold">Select location</h4>
             <button onClick={e => setJobsFilter('')} className="text-sm hover:text-white transition-all">All locations</button>
             {renderedLocations}

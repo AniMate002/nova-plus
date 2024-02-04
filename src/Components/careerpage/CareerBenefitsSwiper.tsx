@@ -11,8 +11,14 @@ const CareerBenefitsSwiper:React.FC = () => {
             <SwiperSlide key={benefit.id}>
                 <div>
                     <h2 className={`${benefit.icon} text-3xl`}></h2>
-                    <h3 className='Haptik mt-10 mb-4 uppercase font-bold text-xl text-violet-600'>{benefit.title}</h3>
-                    <p>{benefit.description}</p>
+                    <h3 className='Haptik mb-4 uppercase font-bold text-xl text-violet-600
+                    mt-4
+                    lg:mt-10
+                    '>{benefit.title}</h3>
+                    <p className='
+                    text-sm
+                    lg:text-base
+                    '>{benefit.description}</p>
                 </div>
             </SwiperSlide>
         )

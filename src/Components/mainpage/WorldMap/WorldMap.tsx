@@ -22,7 +22,7 @@ const WorldMap:React.FC = () => {
     })
 
     return (
-        <div className='pt-52 relative pb-[800px]'>
+        <div className='pt-52 relative pb-[800px] max-w-[1500px] mx-auto'>
             {/* <h3 className='uppercase text-white font-bold Haptik block w-[80%] mx-auto mb-4
             text-sm
             lg:text-4xl

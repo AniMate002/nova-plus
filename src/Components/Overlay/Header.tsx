@@ -18,8 +18,8 @@ const Header:React.FC = () => {
                 <Link onClick={(e) => transitionHandler(e, '/')} to={'/'}>Nova Plus</Link>
                 <div className="flex gap-4">
                     <NavLink to={'/aboutUs'} onClick={(e) => transitionHandler(e, '/aboutUs')}>About Us</NavLink>
-                    <NavLink onClick={(e) => transitionHandler(e, '/games')}  to={'/games'}>Games</NavLink>
                     <NavLink onClick={(e) => transitionHandler(e, '/news')} to={'/news'}>News</NavLink>
+                    <NavLink onClick={(e) => transitionHandler(e, '/games')}  to={'/games'}>Games</NavLink>
                     <NavLink onClick={(e) => transitionHandler(e, '/career')} to={'/career'}>Career</NavLink>
                 </div>
             </header>

@@ -81,7 +81,7 @@ const WeAre:React.FC = () => {
                     stroke-linecap="round" />
             </svg>
             <div className="flex items-center
-            text-[50px] ml-[10%]
+            text-[45px] ml-[10%]
             sm:text-[70px]
             md:ml-[12%] md:text-[100px]
             xl:text-[170px] xl:ml-[20%] 

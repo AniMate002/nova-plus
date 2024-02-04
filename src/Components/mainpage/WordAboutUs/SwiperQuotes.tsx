@@ -7,13 +7,15 @@ const SwiperQuotes = () => {
         w-full
         lg:w-[70%]
         ">
-            <Swiper slidesPerView={1.5} loop={true} centeredSlides={true} spaceBetween={20} className='w-full' freeMode={{sticky: false}} autoplay={{delay:2000}} modules={[Autoplay]} speed={1500}>
+            <Swiper slidesPerView={1.5} loop={true} centeredSlides={true} spaceBetween={20} className='w-full' autoplay={{delay:2000}} modules={[Autoplay]} speed={1500}>
                 <SwiperSlide >
                     <div className='teal--quote bg-teal-700  cursor-pointer 
                     w-[80%] p-2
                     md:w-[400px]
                     lg:w-[350px]
-                    xl:w-[600px] lg:p-14
+                    xl:w-[530px] lg:p-14
+                    min-[1290px]:w-[540px]
+                    min-[1540px]:w-[630px]
                     2xl:w-[700px]
                     '>
                         <p className='text-black font-bold uppercase Haptik
@@ -33,7 +35,10 @@ const SwiperQuotes = () => {
                     w-[80%] p-2
                     md:w-[400px]
                     lg:w-[350px]
-                    xl:w-[600px] lg:p-14
+                    xl:w-[530px] lg:p-14
+                    min-[1290px]:w-[540px]
+                    min-[1540px]:w-[630px]
+
                     2xl:w-[700px]
                     '>
                         <p className='text-black font-bold uppercase Haptik
@@ -53,7 +58,10 @@ const SwiperQuotes = () => {
                     w-[80%] p-2
                     md:w-[400px]
                     lg:w-[350px]
-                    xl:w-[600px] lg:p-14
+                    xl:w-[530px] lg:p-14
+                    min-[1290px]:w-[540px]
+                    min-[1540px]:w-[630px]
+
                     2xl:w-[700px]
                     '>
                         <p className='text-black font-bold uppercase Haptik
@@ -73,7 +81,10 @@ const SwiperQuotes = () => {
                     w-[80%] p-2
                     md:w-[400px]
                     lg:w-[350px]
-                    xl:w-[600px] lg:p-14
+                    xl:w-[530px] lg:p-14
+                    min-[1290px]:w-[540px]
+                    min-[1540px]:w-[630px]
+
                     2xl:w-[700px]
                     '>
                         <p className='text-black font-bold uppercase Haptik

@@ -13,7 +13,7 @@ const News:React.FC = () => {
         setLinkText('')
     }
     return (
-        <div className=" pt-20 pb-20
+        <div className=" pt-20 pb-20 max-w-[1500px] mx-auto
         ml-[10%]
         lg:ml-[20%]
         ">
@@ -32,7 +32,7 @@ const News:React.FC = () => {
                     {linkText ? '' : 'all news'}
                 </NavLink>
                 <div className="
-                ml-[10%] mt-40
+                ml-[0%] mt-40
                 sm:ml-20 sm:mt-0
                 ">
                     <NewsSwiper />

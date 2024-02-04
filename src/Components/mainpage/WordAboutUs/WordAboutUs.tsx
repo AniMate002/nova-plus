@@ -5,9 +5,9 @@ import SwiperQuotes from "./SwiperQuotes";
 
 const WordAboutUs:React.FC = () => {
     return (
-        <div className="flex pt-40  items-center
-        flex-col px-10 gap-10
-        lg:flex-row lg:ml-40 lg:px-0 lg:gap-48
+        <div className="flex pt-40  items-center max-w-[1500px] min-[1700px]:mx-auto
+        flex-col w-[90%] gap-10 mx-auto
+        lg:flex-row lg:justify-between lg:gap-20 lg:ml-auto
         ">
             <LeftSection />
             <SwiperQuotes />
