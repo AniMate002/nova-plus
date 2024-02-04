@@ -12,6 +12,7 @@ export interface jobI {
 export type jobsType = jobI[]
 
 export interface benefitI {
+    id: number,
     icon: string,
     title: string,
     description: string

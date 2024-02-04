@@ -11,13 +11,13 @@ const AboutUsTeam:React.FC = () => {
     return (
         <div className="min-h-[100vh] py-40">
             <div>
-                <div className="w-full h-[100px] bg-violet-800"></div>
-                <h1 className="text-white uppercase font-bold mt-[-50px] text-center
+                <div className="aboutus--team--header--trigger opacity-0 w-full h-[100px] bg-violet-800"></div>
+                <h1 className="aboutus--team--title--trigger relative top-[-10%] opacity-0 text-white uppercase font-bold mt-[-50px] text-center
                 text-4xl
                 sm:text-7xl
                 ">Our crew</h1>
             </div>
-            <div className="mx-auto mt-20
+            <div className="aboutus--team--text--trigger opacity-0 mx-auto mt-20
             w-[80%]
             md:w-[40%]
             ">
@@ -27,7 +27,7 @@ const AboutUsTeam:React.FC = () => {
                 sm:text-base
                 ">NovaPlus boasts a dynamic and passionate team, where creativity intertwines with expertise, driving the company's success and cementing its position as a leader in the gaming industry.</p>
             </div>
-            <div className="w-[80%] mx-auto flex justify-between mt-20 items-center flex-wrap max-w-[1500px]
+            <div className="aboutus--team--allAvatars--trigger w-[80%] mx-auto flex justify-between mt-20 items-center flex-wrap max-w-[1500px]
             gap-10 flex-col
             2xl:gap-0 sm:flex-row
             ">

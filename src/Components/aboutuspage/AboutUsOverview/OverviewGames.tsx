@@ -18,7 +18,7 @@ const OverviewGames:React.FC = () => {
         )
     })
     return (
-        <div className="overview--games--trigger text-white pt-20 flex  justify-between items-center w-[80%] mx-auto">
+        <div className="overview--games--trigger text-white pt-20 flex  justify-between items-center w-[80%] mx-auto max-w-[1500px]">
             <div className="text-white uppercase font-thin">
                 <h3>Products we created</h3>
                 <div className="text-slate-300 mt-20 flex flex-col gap-4 text-md overview--games--list--trigger relative left-[-10%] opacity-0 z-20">

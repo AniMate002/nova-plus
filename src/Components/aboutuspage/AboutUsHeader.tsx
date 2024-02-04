@@ -41,7 +41,7 @@ const AboutUsHeader:React.FC = () => {
     }, [])
 
     return (
-        <div className="about--us--header min-h-[100vh]">
+        <div className="about--us--header min-h-[90vh]">
             <div className="flex  justify-between mx-auto pt-10 max-w-[1500px]
             flex-col w-[70%]
             lg:flex-row lg:w-[90%]

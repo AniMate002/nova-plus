@@ -18,7 +18,7 @@ const WorldMap:React.FC = () => {
     }, [])
 
     const renderedCities = cities.map(city => {
-        return <CityCard {...city}/>
+        return <CityCard key={city.name} {...city}/>
     })
 
     return (

@@ -6,18 +6,12 @@ import Header from "./Components/Overlay/Header";
 import HeaderSmallScreens from "./Components/Overlay/HeaderSmallScreens";
 import HidingHeader from "./Components/Overlay/HidingHeader";
 import { Outlet, useHref, useLocation } from "react-router-dom";
+import TransitionOverlay from "./Components/Overlay/TransitionOverlay";
 
 
 
 const App:React.FC = () => {   
     const url = useLocation()   
-    useEffect(() => {
-        document.documentElement.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-        // alert(JSON.stringify(url))
-    }, [url.pathname, url.search])
     return (
         <div>
             <Border />
@@ -25,6 +19,7 @@ const App:React.FC = () => {
             <HeaderSmallScreens />
             <HidingHeader />
             <Outlet />
+            <TransitionOverlay />
         </div>
     );
 }

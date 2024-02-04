@@ -8,7 +8,7 @@ const CareerBenefitsSwiper:React.FC = () => {
     const { benefits } = useAppSelector(state => state.jobs)
     const renderedBenefits = benefits.map(benefit => {
         return (
-            <SwiperSlide>
+            <SwiperSlide key={benefit.id}>
                 <div>
                     <h2 className={`${benefit.icon} text-3xl`}></h2>
                     <h3 className='Haptik mt-10 mb-4 uppercase font-bold text-xl text-violet-600'>{benefit.title}</h3>

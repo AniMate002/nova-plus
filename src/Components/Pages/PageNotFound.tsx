@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 
@@ -5,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 const PageNotFound:React.FC = () => {
     const navigate = useNavigate()
     const goHome = ():void => navigate('/')
+    useEffect(() => {
+        window.scrollTo(0,0)
+    },[])
     return (
         <div className="min-h-[100vh] bg-gradient-to-bl from-violet-950 to-slate-950 overflow-x-hidden">
             <div className=" text-white opacity-[0.2] w-full text-center uppercase font-bold Haptik tracking-widest

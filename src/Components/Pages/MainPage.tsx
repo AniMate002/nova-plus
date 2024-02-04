@@ -16,6 +16,7 @@ import { addAnimationsToMainPage } from "../../animation/pagesAnimations/mainPag
 
 const MainPage:React.FC = () => {
     useEffect(() => {
+        window.scrollTo(0,0)
         addAnimationsToMainPage()
     }, [])
 

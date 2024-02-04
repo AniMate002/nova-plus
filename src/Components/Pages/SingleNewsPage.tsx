@@ -23,6 +23,7 @@ const SingleNewsPage:React.FC = () => {
         dispatch(findSingleNews(newsId))
     }, [dispatch, newsId])
     useEffect(() => {
+        window.scrollTo(0,0)
         scrollToTop()
     })
 

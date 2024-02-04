@@ -4,15 +4,16 @@ import AboutUsGames from "../aboutuspage/AboutUsGames";
 import AboutUsHeader from "../aboutuspage/AboutUsHeader";
 import OverviewGames from "../aboutuspage/AboutUsOverview/OverviewGames";
 import OverviewImages from "../aboutuspage/AboutUsOverview/OverviewImages";
-import AboutUsSponsors from "../aboutuspage/AboutUsSponsors";
 import AboutUsTeam from "../aboutuspage/AboutUsTeam";
 import { addAnimationsToAboutUs } from "../../animation/pagesAnimations/aboutUsPageAnimations";
+import AboutUsSponsors from "../aboutuspage/AboutUsSponsors";
 
 
 
 const AboutUsPage:React.FC = () => {
     useEffect(() => {
         addAnimationsToAboutUs()
+        window.scrollTo(0,0)
     }, [])
 
 

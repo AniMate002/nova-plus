@@ -5,16 +5,16 @@ interface AboutUsSingleEmployeeI extends emploeeI {
     key: number
 }
 
-const AboutUsSingleEmployee:React.FC<AboutUsSingleEmployeeI> = ({ image, name, position }) => {
+const AboutUsSingleEmployee:React.FC<AboutUsSingleEmployeeI> = ({ image, name, position, id }) => {
     return (
         <div>
-            <div className="overflow-hidden flex justify-center items-center rounded-full hover:outline hover:outline-4 outline-offset-4 outline-violet-700 transition-all
+            <div className={`aboutus--team--avatar${id}--trigger scale-0 overflow-hidden flex justify-center items-center rounded-full hover:outline hover:outline-4 outline-offset-4 outline-violet-700 transition-all
             h-[200px] w-[200px]
             lg:h-[300px] lg:w-[300px]
-            ">
+            `}>
                 <img src={image} alt={image} className="min-w-[200px] mt-20 min-h-max flex-shrink-0"/>
             </div>
-            <div className="text-center mt-6">
+            <div className={`aboutus--team--avatarText${id}--trigger relative top-[-10%] opacity-0 text-center mt-6`}>
                 <h4 className="text-white text-xl Haptik">{name}</h4>
                 <p className="text-slate-400 mt-2">-{position}-</p>
                 <div className="flex justify-around w-[50%] mx-auto mt-4 text-slate-600 ">

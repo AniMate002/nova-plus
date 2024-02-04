@@ -9,15 +9,18 @@ interface SingleNewsItemI extends newsI {
 const SingleNewsItem:React.FC<SingleNewsItemI> = ({title, tags, read, year, date, images, type, id}) => {
     const renderedTags = tags.map(tag => {
         return (
-            <p className="text-white border-2 border-white rounded-full
+            <p key={tag} className="text-white border-2 border-white rounded-full
             px-1 py-1 text-[8px]
             sm:px-4 sm:py-3 sm:text-base
             ">{tag}</p>
         )
     }) 
+    function scrollTop(){
+        window.scrollTo(0,0)
+    }
     if(type === 'big'){
         return (
-            <Link to={`/news/${id}`} className="relative w-full 
+            <Link onClick={() => scrollTop()} to={`/news/${id}`} className="relative w-full 
             mb-64
             md:mb-[200px]
             lg:mb-20

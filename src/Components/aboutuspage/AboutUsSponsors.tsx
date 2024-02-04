@@ -1,34 +1,29 @@
-import bgSponsors from '../../images/sponsors/sponsors.png'
-import SponsorsSwiper from './SponsorsSwiper';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useAppSelector } from "../../redux/hook";
+import { Autoplay } from 'swiper/modules';
 
 
 const AboutUsSponsors:React.FC = () => {
-    return (
-        <div className="min-h-[100vh] pb-10">
-            <div className=' mx-auto flex justify-center max-w-[1500px]
-            flex-col w-[80%] pt-10
-            md:pt-16
-            xl:flex-row xl:w-[90%] xl:pt-20
-            '>
-                <div className=' overflow-hidden relative max-h-[700px]
-                w-full h-auto rounded-t-2xl
-                xl:w-[50%] xl:h-[80vh] xl:rounded-l-2xl xl:rounded-tr-none
-                '>
-                    <img src={bgSponsors} alt={bgSponsors} className='h-full w-full'/>
-                    <h2 className="text-white uppercase font-bold py-20 tracking-widest absolute left-1/2 bottom-0 translate-x-[-50%]
-                    text-4xl
-                    md:text-7xl
-                    ">our sponsors</h2>
-                </div>
-                <div className='bg-gradient-to-br from-slate-800 to-slate-900 flex flex-col justify-around
-                w-full rounded-b-2xl pb-10
-                xl:w-[50%] xl:rounded-r-2xl xl:pb-0 xl:rounded-bl-none
-                '>
-                    <SponsorsSwiper key={111} start={0} end={4} title={"Gold sponsors"}/>
-                    <SponsorsSwiper key={222} start={4} end={10} title={"Silver sponsors"}/>
-                    <SponsorsSwiper key={333} start={10} end={16} title={"Bronze sponsors"}/>
+    const { sponsors } = useAppSelector(state => state.sponsors)
+    const renderedSponsors = sponsors.map(sponsor => {
+        return (
+            <SwiperSlide key={sponsor.id}>
+                <div className="w-[200px] h-[50px] overflow-hidden flex items-center justify-center select-none">
+                    <img src={sponsor.image} alt={sponsor.image} className="h-[50px] min-w-max" />
 
                 </div>
+            </SwiperSlide>
+        )
+    })
+    return (
+        <div className="pt-20 pb-40 text-white ">
+            <h2 className="text-center font-bold text-7xl">Become our sponsor today</h2>
+            <p className="w-[30%] mx-auto text-center mt-10">Elevate your brand presence and engage with our passionate audience by becoming a sponsor today. Together, let's create memorable gaming experiences that resonate with audiences worldwide.</p>
+            <button className="block mx-auto py-4 px-8 bg-slate-200 rounded-full text-violet-600 font-bold mt-10 hover:bg-violet-500 hover:text-white transition-all duration-200">contact us</button>
+            <div className="w-[80%] mx-auto items-center justify-between mt-20">
+                <Swiper slidesPerView={7} spaceBetween={200} loop={true} centeredSlides={true} grabCursor={true} modules={[Autoplay]} autoplay={{delay: 0, pauseOnMouseEnter: true}} speed={1500}>
+                    {renderedSponsors}
+                </Swiper>
             </div>
         </div>
     );

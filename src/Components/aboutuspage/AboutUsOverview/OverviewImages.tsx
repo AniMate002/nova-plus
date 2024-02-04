@@ -10,7 +10,7 @@ import over5 from '../../../images/AboutUs/over5.jpg'
 
 const OverviewImages:React.FC = () => {
     return (
-        <div className="pt-40 pb-20 text-white">
+        <div className="pt-40 pb-20 text-white max-w-[1500px] mx-auto">
             <h2 className="overview--title--trigger opacity-0 w-[40%] Haptik text-3xl mx-auto">NovaPlus stands at the forefront of innovation in the gaming industry, where creativity knows no bounds. Our dynamic team is fueled by a passion for pushing the limits, crafting unforgettable gaming experiences that resonate globally.</h2>
             <div className='flex justify-start mt-20 gap-40'>
                 <img src={over1} alt={over1} className='overview--1--image--trigger relative opacity-0 left-[-10%]' />
