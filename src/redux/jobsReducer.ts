@@ -47,7 +47,7 @@ const initialState: initialStateI = {
 
 
 
-export const jobsSlice = createSlice({
+const jobsSlice = createSlice({
     name: 'jobs',
     initialState,
     reducers: {

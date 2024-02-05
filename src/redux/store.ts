@@ -5,6 +5,7 @@ import jobsReducer from './jobsReducer'
 import newsReducer from './newsReducer'
 import teamReducer from './teamReducer'
 import sponsorsReducer from './sponsorsReducer'
+import userReducer from './userReducer'
 
 export const store = configureStore({
   reducer: {
@@ -13,7 +14,8 @@ export const store = configureStore({
     jobs: jobsReducer,
     news: newsReducer,
     team: teamReducer,
-    sponsors: sponsorsReducer
+    sponsors: sponsorsReducer,
+    user: userReducer
   },
 })
 
