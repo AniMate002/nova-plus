@@ -32,7 +32,7 @@ const SingleGameCard:React.FC<SingleGameCardI> = ({image, title, tags, platforms
                     md:ml-4
                     ">
                         {platforms.map(platform => {
-                            return <p className='text-white text-md font-semibold'><i className={platform}></i></p>
+                            return <p key={platform+"gameCard"} className='text-white text-md font-semibold'><i className={platform}></i></p>
                         })}
                     </div>
                     <div className="flex  flex-wrap
@@ -44,7 +44,7 @@ const SingleGameCard:React.FC<SingleGameCardI> = ({image, title, tags, platforms
                         {
                             tags.map((tag: string) => {
                                 return (
-                                    <p className='text-white bg-transparent border-[1px] border-white px-2 py-1 rounded-full uppercase 
+                                    <p key={tag+"gameCard"} className='text-white bg-transparent border-[1px] border-white px-2 py-1 rounded-full uppercase 
                                     text-[10px]
                                     sm:text-[8px]
                                     md:text-[10px]

@@ -11,7 +11,7 @@ const FilterGames:React.FC = () => {
     const compareTags = (tag:string):boolean => tag === activeTag
     const renderedTags = tags.slice(0, 11).map(tag => {
         return (
-            <button onClick={() => setActiveTag(compareTags(tag) ? "" : tag)} className={` ${setTextColor(tag)} border-[1px] bg-${setBg(tag)} font-semibold rounded-full px-2 py-1  hover:bg-white hover:text-violet-800 flex items-center gap-2
+            <button key={tag} onClick={() => setActiveTag(compareTags(tag) ? "" : tag)} className={` ${setTextColor(tag)} border-[1px] bg-${setBg(tag)} font-semibold rounded-full px-2 py-1  hover:bg-white hover:text-violet-800 flex items-center gap-2
             text-[8px]
             sm:text-md
             lg:text-sm

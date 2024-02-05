@@ -10,7 +10,7 @@ const AllGames:React.FC = () => {
     const getRenderedGamesCards = (cards: cardsType) => {
         return cards.map(game => {
             return (
-                <SingleGameCard {...game}/>
+                <SingleGameCard key={game.id} {...game}/>
             )
         })
     }

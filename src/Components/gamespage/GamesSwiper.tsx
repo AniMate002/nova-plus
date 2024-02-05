@@ -17,7 +17,7 @@ const coverFLowSettings = {
 export const getRenderedTags = (tags: Array<string>) => {
     return tags.map((tag: string) => {
         return (
-            <p className='text-white bg-transparent border-[1px] border-white  rounded-full  
+            <p key={tag} className='text-white bg-transparent border-[1px] border-white  rounded-full  
             text-[6px] px-1 py-0 lowercase
             min-[460px]:text-[8px] min-[460px]:px-2 min-[460px]:py-1
             sm:text-[10px] sm:px-2 sm:py-1
@@ -31,7 +31,7 @@ export const getRenderedTags = (tags: Array<string>) => {
 
 export const getRenderedPlatforms = (platforms: Array<string>) => {
     return platforms.map(platform => {
-        return <p className='text-white  font-semibold
+        return <p key={platform} className='text-white  font-semibold
         text-[8px]
         min-[460px]:text-[10px]
         sm:text-sm
@@ -49,7 +49,7 @@ const GamesSwiper = () => {
 
     const renderedGamesSliders = cards.slice(4, 7).map(game => {
         return (
-            <SwiperSlide className={`games--page--games--slide--${activeSlide+1}`}>
+            <SwiperSlide key={game.id} className={`games--page--games--slide--${activeSlide+1}`}>
                 <div className='relative w-full h-full'>
                     <div className='w-full h-full absolute bg-black opacity-[0.4] z-10'></div>
                     <img src={game.image} alt={game.image} className=' min-w-[100%] rounded-xl border-2 border-violet-800' />
