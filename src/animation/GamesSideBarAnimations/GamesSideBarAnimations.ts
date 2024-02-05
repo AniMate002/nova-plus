@@ -12,6 +12,6 @@ export const showGamesSideBar = () => {
 export const hideGamesSideBar = () => {
     gsap.to('.games--sidebar', {
         right: '-100%',
-        duration: 1
+        duration: 0.5
     })
 }

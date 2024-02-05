@@ -1,9 +1,19 @@
-import { useAppSelector } from "../../../redux/hook";
+import { showGamesAuthModal } from "../../../animation/GamesSideBarAnimations/GamesAuthModalAnimations";
+import { useAppDispatch, useAppSelector } from "../../../redux/hook";
+import { changeType } from "../../../redux/userReducer";
 
 
 
 const GamesUserSection:React.FC = () => {
-    const { isLoading, error, user, isLogged} = useAppSelector(state => state.user)
+    const { isLoading, error, user, isLogged, type} = useAppSelector(state => state.user)
+    const dispatch = useAppDispatch()
+
+    const authBtnClickHandler = (btnType: 'Sign up' | 'Login') => {
+        if(type !== btnType)
+            dispatch(changeType(btnType))
+        showGamesAuthModal()
+    }
+
     if(isLogged){
         return (
             <div className="flex justify-between items-center py-4 hover:bg-slate-800 px-10 rounded-xl transition-all duration-200">
@@ -24,8 +34,8 @@ const GamesUserSection:React.FC = () => {
     }else{
         return (
             <div className="mx-10 flex items-center gap-4">
-                <button className="font-bold text-slate-500 text-sm rounded-xl hover:text-slate-300 transition-all duration-200">Log In</button>
-                <button className="font-bold text-violet-500 text-sm rounded-xl hover:text-violet-300 transition-all duration-">Sign Up</button>
+                <button onClick={() => authBtnClickHandler("Login")} className="font-bold text-slate-500 text-sm rounded-xl hover:text-slate-300 transition-all duration-200">Log In</button>
+                <button onClick={() => authBtnClickHandler("Sign up")} className="font-bold text-violet-500 text-sm rounded-xl hover:text-violet-300 transition-all duration-">Sign Up</button>
             </div>
         )
     }

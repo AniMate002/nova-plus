@@ -7,6 +7,8 @@ import GamesSideBar from "../gamespage/GamesSideBars/GamesSideBar";
 import { useAppDispatch } from "../../redux/hook";
 import { logInUser } from "../../redux/userReducer";
 import { hideGamesSideBar, showGamesSideBar } from "../../animation/GamesSideBarAnimations/GamesSideBarAnimations";
+import TransitionOverlay from "../Overlay/TransitionOverlay";
+import GamesAuthModal from "../gamespage/GamesSideBars/GamesAuthModal";
 
 
 const GamesPage:React.FC = () => {
@@ -30,6 +32,7 @@ const GamesPage:React.FC = () => {
 
     return (
         <div className="bg-gradient-to-tl from-violet-900 to-slate-950 min-h-[100vh] overflow-x-hidden">
+            <GamesAuthModal />
             <header className="w-full uppercase text-white font-bold text-center pt-20 pb-6 text-5xl">
                 <Link to={'/'}>nova plus</Link>
             </header>    
