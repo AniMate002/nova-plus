@@ -17,11 +17,11 @@ const HidingHeader:React.FC = () => {
         </div>
 
         <div className="flex items-stretch justify-between mt-20 h-[250px] overflow-hidden">
-            <Link to={'/career'} className="block--link--small--header h-[250px] bg-white py-2 px-2 w-[50%] relative top-[100%]">
+            <Link onClick={closeHeaderSmall} to={'/career'} className="block--link--small--header h-[250px] bg-white py-2 px-2 w-[50%] relative top-[100%]">
                 <p className=" font-bold">jobs<br></br>available</p>
                 <p className="text-8xl text-center mt-10"><i className="fa-brands fa-codepen"></i></p>
             </Link>
-            <Link to={'/games'} className="block--link--small--header h-[250px] bg-slate-800 py-2 px-2 w-[50%] text-white relative top-[100%]">
+            <Link onClick={closeHeaderSmall} to={'/games'} className="block--link--small--header h-[250px] bg-slate-800 py-2 px-2 w-[50%] text-white relative top-[100%]">
                 <p className=" font-bold">view our<br></br>games</p>
                 <p className="text-8xl text-center mt-10"><i className="fa-solid fa-dice-d20"></i></p>
             </Link>
