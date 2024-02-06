@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit"
+import { AnyAction, createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit"
 import axios, { AxiosHeaders } from 'axios';
 import { access } from "fs";
 
@@ -26,7 +26,8 @@ interface initialStateI {
     isLoading: boolean,
     error: null | string,
     isLogged: boolean,
-    type: 'Login' | 'Sign up'
+    type: 'Login' | 'Sign up',
+    sideBar: boolean
 
 }
 
@@ -35,7 +36,8 @@ const initialState: initialStateI = {
     isLoading: false,
     error: null,
     isLogged: false,
-    type: 'Login'
+    type: 'Login',
+    sideBar: false
 }
 
 const BASE_URL_TOKEN: string = 'https://api.escuelajs.co/api/v1/auth/login'
@@ -48,6 +50,7 @@ export const logInUser = createAsyncThunk<userI, userPayloadI, {rejectValue: str
 
         const res = await axios.post(BASE_URL_TOKEN, user)
         const token = await res.data.access_token
+
         if(!token)
             throw new Error('Token was not received')
         const res_2 = await axios.get(BASE_URL_USER, {
@@ -96,6 +99,9 @@ const userSlice = createSlice({
             state.isLoading = false
             state.isLogged = false
             state.error = null
+        },
+        toggleSideBar: (state) => {
+            state.sideBar = !state.sideBar
         }
     },
     extraReducers:(builder) => {
@@ -122,9 +128,18 @@ const userSlice = createSlice({
             state.user = action.payload
             state.isLogged = true
         })
+        .addMatcher(isError, (state, action: PayloadAction<string>) => {
+            state.error = action.payload
+            state.isLoading = false
+            state.isLogged = false
+        })
     }
 })
 
 
-export const { changeType, toggleType, logOut} = userSlice.actions 
+export const { changeType, toggleType, logOut, toggleSideBar} = userSlice.actions 
 export default userSlice.reducer
+
+function isError (action: AnyAction){
+    return action.type.endsWith('rejected')
+}

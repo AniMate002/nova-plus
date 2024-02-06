@@ -16,7 +16,7 @@ const GamesUserSection:React.FC = () => {
 
     if(isLogged){
         return (
-            <div className="flex justify-between items-center py-4 hover:bg-slate-800 px-10 rounded-xl transition-all duration-200">
+            <div className="flex justify-between items-center py-4 hover:bg-slate-800 px-4 rounded-xl transition-all duration-200">
                 <div className="flex gap-4 items-center">
                     <div className="w-[40px] h-[40px] overflow-hidden rounded-full">
                         <img src={user?.avatar} alt={user?.avatar} />
@@ -33,9 +33,9 @@ const GamesUserSection:React.FC = () => {
         );
     }else{
         return (
-            <div className="mx-10 flex items-center gap-4">
-                <button onClick={() => authBtnClickHandler("Login")} className="font-bold text-slate-500 text-sm rounded-xl hover:text-slate-300 transition-all duration-200">Log In</button>
-                <button onClick={() => authBtnClickHandler("Sign up")} className="font-bold text-violet-500 text-sm rounded-xl hover:text-violet-300 transition-all duration-">Sign Up</button>
+            <div className="mx-10 flex my-4 items-center gap-4">
+                <button type="button" onClick={() => authBtnClickHandler("Login")} className="font-bold text-slate-500 text-sm rounded-xl hover:text-slate-300 transition-all duration-200">Log In</button>
+                <button type="button" onClick={() => authBtnClickHandler("Sign up")} className="font-bold text-violet-500 text-sm rounded-xl hover:text-violet-300 transition-all duration-">Sign Up</button>
             </div>
         )
     }
