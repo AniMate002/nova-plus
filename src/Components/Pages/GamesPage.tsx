@@ -8,7 +8,7 @@ import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { logInUser, toggleSideBar } from "../../redux/userReducer";
 import { hideGamesSideBar, showGamesSideBar } from "../../animation/GamesSideBarAnimations/GamesSideBarAnimations";
 import TransitionOverlay from "../Overlay/TransitionOverlay";
-import GamesAuthModal from "../gamespage/GamesSideBars/GamesAuthModal";
+import GamesAuthModal from "../gamespage/GamesSideBars/GamesSideBarModal/GamesAuthModal";
 
 
 const GamesPage:React.FC = () => {

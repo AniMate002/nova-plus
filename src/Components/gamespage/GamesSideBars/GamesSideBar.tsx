@@ -20,8 +20,10 @@ const GamesSideBar:React.FC = () => {
     }
     
     return (
-        <div className="games--sidebar  right-[-100%] fixed top-0 w-[350px] h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900 z-40 px-4 text-white
+        <div className="games--sidebar fixed top-0 h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900 z-40 px-4 text-white overflow-y-scroll
         flex flex-col justify-between
+        right-[-120%]
+        w-[350px]
         ">
             <div className="py-10">
                 <NavLink to={'/'} className={'flex gap-4 items-center Haptik tracking-wider px-10 py-4 hover:bg-slate-800 rounded-xl transition-all duration-200 text-slate-400 hover:text-white'}><i className="fa-solid fa-house-chimney"></i>Dashboard</NavLink>
