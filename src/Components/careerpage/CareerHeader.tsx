@@ -13,7 +13,10 @@ const CareedHeader:React.FC = () => {
             sm:text-7xl
             ">Start your career here</h1>
             <h2 className="text-violet-300 font-bold text-2xl">become a professional</h2>
-            <div className="flex gap-10">
+            <div className="flex
+            gap-4
+            md:gap-10
+            ">
                 <Link to={'/'} className="text-violet-100 bg-violet-600 rounded-xl mt-10 hover:bg-violet-500  transition-all
                 px-4 py-4 text-[12px] font-bold
                 sm:px-8 sm:py-4 sm:text-base

@@ -20,7 +20,7 @@ const GamesSideBar:React.FC = () => {
     }
     
     return (
-        <div className="games--sidebar fixed top-0 h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900 z-40 px-4 text-white overflow-y-scroll
+        <div className="games--sidebar fixed top-0 h-[100vh] bg-gradient-to-tl from-slate-800 to-slate-900 z-40 px-4 text-white overflow-y-auto
         flex flex-col justify-between
         right-[-120%]
         w-full

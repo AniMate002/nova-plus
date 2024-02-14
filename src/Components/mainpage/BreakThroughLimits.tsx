@@ -92,7 +92,7 @@ const BreakThroughLimits:React.FC = () => {
                 md:text-[100px]
                 2xl:text-[200px]
                 ">nova plus</p>
-                <button disabled={aliveCube} onClick={startGame} className="select-none text-white game--btn uppercase py-4 px-10 outline outline-violet-800 hover:bg-violet-800 cursor-pointer relative 
+                <button disabled={aliveCube} onClick={startGame} className="select-none text-white game--btn uppercase py-4 px-10 hover:bg-violet-800 cursor-pointer relative 
                 ">{points === 0 ? "start" : "restart"}</button>
             </div>
                 {/* <Card /> */}
